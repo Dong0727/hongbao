@@ -1,0 +1,1483 @@
+[ 2017-01-02T10:22:54+08:00 ] 113.233.125.22 /index.php?m=Utm&c=Index&a=cleardata
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: TRUNCATE haokuai_sys_log [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007812s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007812s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T10:22:55+08:00 ] 113.233.125.22 /index.php?m=Utm&c=Index&a=center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T10:22:57+08:00 ] 113.233.125.22 /index.php?m=Utm&c=Sysconfig&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `haokuai_sys_config` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `haokuai_sys_config` WHERE ( adminid=1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cbeicode - assumed 'cbeicode' C:\hongbao\1\Project\Runtime\Cache\Utm\5cd53d35ff1414d1900432289dc69e87.php 第 30 行.
+NOTIC: [8] Use of undefined constant cmaurl - assumed 'cmaurl' C:\hongbao\1\Project\Runtime\Cache\Utm\5cd53d35ff1414d1900432289dc69e87.php 第 77 行.
+NOTIC: [8] Use of undefined constant cfaurl - assumed 'cfaurl' C:\hongbao\1\Project\Runtime\Cache\Utm\5cd53d35ff1414d1900432289dc69e87.php 第 81 行.
+NOTIC: [8] Use of undefined constant cbeiurl - assumed 'cbeiurl' C:\hongbao\1\Project\Runtime\Cache\Utm\5cd53d35ff1414d1900432289dc69e87.php 第 120 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: uk C:\hongbao\1\Project\Utm\Controller\IndexController.class.php 第 53 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T10:31:23+08:00 ] 113.233.125.22 /index.php?m=Utm&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T10:31:23+08:00 ] 113.233.125.22 /index.php?m=Utm&c=Login&a=ma
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T10:31:36+08:00 ] 113.233.125.22 /index.php?m=Utm&c=Login&a=ajaxlogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007813s ]
+NOTIC: [8] Undefined index: cishu C:\hongbao\1\Project\Utm\Controller\LoginController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `haokuai_sys_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `haokuai_sys_user` WHERE ( uname='admin' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `haokuai_sys_user` SET `utime`='1483324296' WHERE `id` = 1 [ RunTime:0.0000s ]
+
+[ 2017-01-02T10:31:37+08:00 ] 113.233.125.22 /index.php?m=Utm&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: str C:\hongbao\1\Project\Utm\Controller\CommonController.class.php 第 16 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T10:31:37+08:00 ] 113.233.125.22 /index.php?m=Utm&c=Index&a=top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T10:31:37+08:00 ] 113.233.125.22 /index.php?m=Utm&c=Index&a=left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T10:31:37+08:00 ] 113.233.125.22 /index.php?m=Utm&c=Index&a=center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T10:31:37+08:00 ] 113.233.125.22 /index.php?m=Utm&c=Index&a=footer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007812s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T10:31:47+08:00 ] 113.233.125.22 /index.php?m=Utm&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: whe C:\hongbao\1\Project\Utm\Controller\UserController.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM haokuai_user_list a LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: whe C:\hongbao\1\Project\Utm\Controller\UserController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT a.*,b.uchongzong,b.uqianchong,b.uqianzheng,b.uzhengzong,b.uqianfa FROM haokuai_user_list as a left join haokuai_user_zhanghu as b on a.id=b.userid  ORDER BY a.id desc LIMIT 0,7   [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_hb` [ RunTime:0.0000s ]
+SQL: SELECT SUM(hbe) AS tp_sum FROM `haokuai_user_hb` WHERE ( userid=1 and tcode=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT SUM(b.uchongzong) AS tp_sum FROM haokuai_user_list a left join haokuai_user_zhanghu b on a.id=b.userid  WHERE ( a.utid=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM haokuai_user_list as a WHERE ( a.utid=1 ) LIMIT 1   [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `haokuai_saolei_userfa` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `haokuai_saolei_userfa` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_tixian` [ RunTime:0.0000s ]
+SQL: SELECT SUM(tixiane) AS tp_sum FROM `haokuai_user_tixian` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant uheadimgurl - assumed 'uheadimgurl' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 85 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 102 行.
+NOTIC: [8] Use of undefined constant uvip - assumed 'uvip' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 103 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 109 行.
+NOTIC: [8] Use of undefined constant ustate - assumed 'ustate' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 110 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 117 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T10:31:49+08:00 ] 113.233.125.22 /index.php?m=Utm&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007813s ]
+NOTIC: [8] Undefined variable: whe C:\hongbao\1\Project\Utm\Controller\UserController.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM haokuai_user_list a LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: whe C:\hongbao\1\Project\Utm\Controller\UserController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT a.*,b.uchongzong,b.uqianchong,b.uqianzheng,b.uzhengzong,b.uqianfa FROM haokuai_user_list as a left join haokuai_user_zhanghu as b on a.id=b.userid  ORDER BY a.id desc LIMIT 0,7   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_hb` [ RunTime:0.0000s ]
+SQL: SELECT SUM(hbe) AS tp_sum FROM `haokuai_user_hb` WHERE ( userid=1 and tcode=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT SUM(b.uchongzong) AS tp_sum FROM haokuai_user_list a left join haokuai_user_zhanghu b on a.id=b.userid  WHERE ( a.utid=1 ) LIMIT 1   [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM haokuai_user_list as a WHERE ( a.utid=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_saolei_userfa` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `haokuai_saolei_userfa` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_tixian` [ RunTime:0.0000s ]
+SQL: SELECT SUM(tixiane) AS tp_sum FROM `haokuai_user_tixian` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.007812s ]
+NOTIC: [8] Use of undefined constant uheadimgurl - assumed 'uheadimgurl' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 85 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 102 行.
+NOTIC: [8] Use of undefined constant uvip - assumed 'uvip' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 103 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 109 行.
+NOTIC: [8] Use of undefined constant ustate - assumed 'ustate' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 110 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 117 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T10:31:49+08:00 ] 113.233.125.22 /index.php?m=Utm&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: whe C:\hongbao\1\Project\Utm\Controller\UserController.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM haokuai_user_list a LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: whe C:\hongbao\1\Project\Utm\Controller\UserController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0078s ]
+SQL: SELECT a.*,b.uchongzong,b.uqianchong,b.uqianzheng,b.uzhengzong,b.uqianfa FROM haokuai_user_list as a left join haokuai_user_zhanghu as b on a.id=b.userid  ORDER BY a.id desc LIMIT 0,7   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_hb` [ RunTime:0.0000s ]
+SQL: SELECT SUM(hbe) AS tp_sum FROM `haokuai_user_hb` WHERE ( userid=1 and tcode=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT SUM(b.uchongzong) AS tp_sum FROM haokuai_user_list a left join haokuai_user_zhanghu b on a.id=b.userid  WHERE ( a.utid=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM haokuai_user_list as a WHERE ( a.utid=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_saolei_userfa` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `haokuai_saolei_userfa` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_tixian` [ RunTime:0.0000s ]
+SQL: SELECT SUM(tixiane) AS tp_sum FROM `haokuai_user_tixian` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant uheadimgurl - assumed 'uheadimgurl' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 85 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 102 行.
+NOTIC: [8] Use of undefined constant uvip - assumed 'uvip' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 103 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 109 行.
+NOTIC: [8] Use of undefined constant ustate - assumed 'ustate' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 110 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 117 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T10:31:50+08:00 ] 113.233.125.22 /index.php?m=Utm&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: whe C:\hongbao\1\Project\Utm\Controller\UserController.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM haokuai_user_list a LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: whe C:\hongbao\1\Project\Utm\Controller\UserController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT a.*,b.uchongzong,b.uqianchong,b.uqianzheng,b.uzhengzong,b.uqianfa FROM haokuai_user_list as a left join haokuai_user_zhanghu as b on a.id=b.userid  ORDER BY a.id desc LIMIT 0,7   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_hb` [ RunTime:0.0000s ]
+SQL: SELECT SUM(hbe) AS tp_sum FROM `haokuai_user_hb` WHERE ( userid=1 and tcode=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT SUM(b.uchongzong) AS tp_sum FROM haokuai_user_list a left join haokuai_user_zhanghu b on a.id=b.userid  WHERE ( a.utid=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM haokuai_user_list as a WHERE ( a.utid=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_saolei_userfa` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `haokuai_saolei_userfa` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_tixian` [ RunTime:0.0078s ]
+SQL: SELECT SUM(tixiane) AS tp_sum FROM `haokuai_user_tixian` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant uheadimgurl - assumed 'uheadimgurl' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 85 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 102 行.
+NOTIC: [8] Use of undefined constant uvip - assumed 'uvip' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 103 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 109 行.
+NOTIC: [8] Use of undefined constant ustate - assumed 'ustate' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 110 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 117 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T10:31:51+08:00 ] 113.233.125.22 /index.php?m=Utm&c=Sysconfig&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `haokuai_sys_config` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `haokuai_sys_config` WHERE ( adminid=1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cbeicode - assumed 'cbeicode' C:\hongbao\1\Project\Runtime\Cache\Utm\5cd53d35ff1414d1900432289dc69e87.php 第 30 行.
+NOTIC: [8] Use of undefined constant cmaurl - assumed 'cmaurl' C:\hongbao\1\Project\Runtime\Cache\Utm\5cd53d35ff1414d1900432289dc69e87.php 第 77 行.
+NOTIC: [8] Use of undefined constant cfaurl - assumed 'cfaurl' C:\hongbao\1\Project\Runtime\Cache\Utm\5cd53d35ff1414d1900432289dc69e87.php 第 81 行.
+NOTIC: [8] Use of undefined constant cbeiurl - assumed 'cbeiurl' C:\hongbao\1\Project\Runtime\Cache\Utm\5cd53d35ff1414d1900432289dc69e87.php 第 120 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: uk C:\hongbao\1\Project\Utm\Controller\IndexController.class.php 第 53 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007813s ]
+
+[ 2017-01-02T10:31:55+08:00 ] 113.233.125.22 /index.php?m=Utm&c=Sysconfig&a=save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `haokuai_sys_config` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `haokuai_sys_config` WHERE ( adminid=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `haokuai_sys_config` SET `cduanlianjie`='2',`ctongzhi`='',`ckouliang`='0',`cwxappid`='wx0d8499b1a5c87587',`cwxappsecret`='b40bb744e7a261a31188961d1c6b5042',`cwxmchid`='1430042702',`cwxappkey`='11111111112222222222333333333344',`cdenglucode`='2',`cyongjinfa`='1',`cdailicode`='2',`cgundong`='2',`cmaurl`='http://hb.t3live.cn',`cfaurl`='http://www.sssmz.cn',`cyongjine`='0',`cchongzong`='0',`cpingbie`='0',`cbeicode`='2',`cbeiurl`='http://hb.t3live.cn',`cbeiappid`='',`cbeiappsecret`='',`cbeipay`='1',`cbeimchid`='',`cbeiappkey`='',`adminid`='1' WHERE `id` = 1 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T10:31:56+08:00 ] 113.233.125.22 /index.php?m=Utm&c=Sysconfig&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `haokuai_sys_config` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `haokuai_sys_config` WHERE ( adminid=1 ) LIMIT 1   [ RunTime:0.0078s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant cbeicode - assumed 'cbeicode' C:\hongbao\1\Project\Runtime\Cache\Utm\5cd53d35ff1414d1900432289dc69e87.php 第 30 行.
+NOTIC: [8] Use of undefined constant cmaurl - assumed 'cmaurl' C:\hongbao\1\Project\Runtime\Cache\Utm\5cd53d35ff1414d1900432289dc69e87.php 第 77 行.
+NOTIC: [8] Use of undefined constant cfaurl - assumed 'cfaurl' C:\hongbao\1\Project\Runtime\Cache\Utm\5cd53d35ff1414d1900432289dc69e87.php 第 81 行.
+NOTIC: [8] Use of undefined constant cbeiurl - assumed 'cbeiurl' C:\hongbao\1\Project\Runtime\Cache\Utm\5cd53d35ff1414d1900432289dc69e87.php 第 120 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: uk C:\hongbao\1\Project\Utm\Controller\IndexController.class.php 第 53 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T10:31:56+08:00 ] 113.233.125.22 /index.php?m=Utm&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: whe C:\hongbao\1\Project\Utm\Controller\UserController.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM haokuai_user_list a LIMIT 1   [ RunTime:0.0078s ]
+NOTIC: [8] Undefined variable: whe C:\hongbao\1\Project\Utm\Controller\UserController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT a.*,b.uchongzong,b.uqianchong,b.uqianzheng,b.uzhengzong,b.uqianfa FROM haokuai_user_list as a left join haokuai_user_zhanghu as b on a.id=b.userid  ORDER BY a.id desc LIMIT 0,7   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_hb` [ RunTime:0.0000s ]
+SQL: SELECT SUM(hbe) AS tp_sum FROM `haokuai_user_hb` WHERE ( userid=1 and tcode=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0078s ]
+SQL: SELECT SUM(b.uchongzong) AS tp_sum FROM haokuai_user_list a left join haokuai_user_zhanghu b on a.id=b.userid  WHERE ( a.utid=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM haokuai_user_list as a WHERE ( a.utid=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_saolei_userfa` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `haokuai_saolei_userfa` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_tixian` [ RunTime:0.0000s ]
+SQL: SELECT SUM(tixiane) AS tp_sum FROM `haokuai_user_tixian` WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant uheadimgurl - assumed 'uheadimgurl' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 85 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 102 行.
+NOTIC: [8] Use of undefined constant uvip - assumed 'uvip' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 103 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 109 行.
+NOTIC: [8] Use of undefined constant ustate - assumed 'ustate' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 110 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 117 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T10:32:26+08:00 ] 113.233.125.22 /index.php?m=Utm&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007812s ]
+NOTIC: [8] Undefined variable: whe C:\hongbao\1\Project\Utm\Controller\UserController.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM haokuai_user_list a LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: whe C:\hongbao\1\Project\Utm\Controller\UserController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0078s ]
+SQL: SELECT a.*,b.uchongzong,b.uqianchong,b.uqianzheng,b.uzhengzong,b.uqianfa FROM haokuai_user_list as a left join haokuai_user_zhanghu as b on a.id=b.userid  ORDER BY a.id desc LIMIT 0,7   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_hb` [ RunTime:0.0000s ]
+SQL: SELECT SUM(hbe) AS tp_sum FROM `haokuai_user_hb` WHERE ( userid=6 and tcode=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT SUM(b.uchongzong) AS tp_sum FROM haokuai_user_list a left join haokuai_user_zhanghu b on a.id=b.userid  WHERE ( a.utid=6 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM haokuai_user_list as a WHERE ( a.utid=6 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_saolei_userfa` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `haokuai_saolei_userfa` WHERE ( userid=6 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_tixian` [ RunTime:0.0000s ]
+SQL: SELECT SUM(tixiane) AS tp_sum FROM `haokuai_user_tixian` WHERE ( userid=6 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant uheadimgurl - assumed 'uheadimgurl' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 85 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 102 行.
+NOTIC: [8] Use of undefined constant uvip - assumed 'uvip' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 103 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 109 行.
+NOTIC: [8] Use of undefined constant ustate - assumed 'ustate' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 110 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 117 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T11:04:50+08:00 ] 113.233.125.22 /index.php?m=Utm&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: whe C:\hongbao\1\Project\Utm\Controller\UserController.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM haokuai_user_list a LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: whe C:\hongbao\1\Project\Utm\Controller\UserController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT a.*,b.uchongzong,b.uqianchong,b.uqianzheng,b.uzhengzong,b.uqianfa FROM haokuai_user_list as a left join haokuai_user_zhanghu as b on a.id=b.userid  ORDER BY a.id desc LIMIT 0,7   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_hb` [ RunTime:0.0078s ]
+SQL: SELECT SUM(hbe) AS tp_sum FROM `haokuai_user_hb` WHERE ( userid=8 and tcode=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT SUM(b.uchongzong) AS tp_sum FROM haokuai_user_list a left join haokuai_user_zhanghu b on a.id=b.userid  WHERE ( a.utid=8 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM haokuai_user_list as a WHERE ( a.utid=8 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_saolei_userfa` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `haokuai_saolei_userfa` WHERE ( userid=8 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_tixian` [ RunTime:0.0000s ]
+SQL: SELECT SUM(tixiane) AS tp_sum FROM `haokuai_user_tixian` WHERE ( userid=8 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(hbe) AS tp_sum FROM `haokuai_user_hb` WHERE ( userid=7 and tcode=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT SUM(b.uchongzong) AS tp_sum FROM haokuai_user_list a left join haokuai_user_zhanghu b on a.id=b.userid  WHERE ( a.utid=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM haokuai_user_list as a WHERE ( a.utid=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `haokuai_saolei_userfa` WHERE ( userid=7 ) LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT SUM(tixiane) AS tp_sum FROM `haokuai_user_tixian` WHERE ( userid=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(hbe) AS tp_sum FROM `haokuai_user_hb` WHERE ( userid=6 and tcode=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT SUM(b.uchongzong) AS tp_sum FROM haokuai_user_list a left join haokuai_user_zhanghu b on a.id=b.userid  WHERE ( a.utid=6 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM haokuai_user_list as a WHERE ( a.utid=6 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `haokuai_saolei_userfa` WHERE ( userid=6 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(tixiane) AS tp_sum FROM `haokuai_user_tixian` WHERE ( userid=6 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant uheadimgurl - assumed 'uheadimgurl' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 85 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 102 行.
+NOTIC: [8] Use of undefined constant uvip - assumed 'uvip' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 103 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 109 行.
+NOTIC: [8] Use of undefined constant ustate - assumed 'ustate' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 110 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 117 行.
+NOTIC: [8] Use of undefined constant uheadimgurl - assumed 'uheadimgurl' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 85 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 102 行.
+NOTIC: [8] Use of undefined constant uvip - assumed 'uvip' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 103 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 109 行.
+NOTIC: [8] Use of undefined constant ustate - assumed 'ustate' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 110 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 117 行.
+NOTIC: [8] Use of undefined constant uheadimgurl - assumed 'uheadimgurl' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 85 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 102 行.
+NOTIC: [8] Use of undefined constant uvip - assumed 'uvip' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 103 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 109 行.
+NOTIC: [8] Use of undefined constant ustate - assumed 'ustate' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 110 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 117 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T11:04:52+08:00 ] 113.233.125.22 /index.php?m=Utm&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: whe C:\hongbao\1\Project\Utm\Controller\UserController.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM haokuai_user_list a LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: whe C:\hongbao\1\Project\Utm\Controller\UserController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT a.*,b.uchongzong,b.uqianchong,b.uqianzheng,b.uzhengzong,b.uqianfa FROM haokuai_user_list as a left join haokuai_user_zhanghu as b on a.id=b.userid  ORDER BY a.id desc LIMIT 0,7   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_hb` [ RunTime:0.0000s ]
+SQL: SELECT SUM(hbe) AS tp_sum FROM `haokuai_user_hb` WHERE ( userid=8 and tcode=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0078s ]
+SQL: SELECT SUM(b.uchongzong) AS tp_sum FROM haokuai_user_list a left join haokuai_user_zhanghu b on a.id=b.userid  WHERE ( a.utid=8 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM haokuai_user_list as a WHERE ( a.utid=8 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_saolei_userfa` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `haokuai_saolei_userfa` WHERE ( userid=8 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_tixian` [ RunTime:0.0000s ]
+SQL: SELECT SUM(tixiane) AS tp_sum FROM `haokuai_user_tixian` WHERE ( userid=8 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(hbe) AS tp_sum FROM `haokuai_user_hb` WHERE ( userid=7 and tcode=1 ) LIMIT 1   [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT SUM(b.uchongzong) AS tp_sum FROM haokuai_user_list a left join haokuai_user_zhanghu b on a.id=b.userid  WHERE ( a.utid=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM haokuai_user_list as a WHERE ( a.utid=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `haokuai_saolei_userfa` WHERE ( userid=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(tixiane) AS tp_sum FROM `haokuai_user_tixian` WHERE ( userid=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(hbe) AS tp_sum FROM `haokuai_user_hb` WHERE ( userid=6 and tcode=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0078s ]
+SQL: SELECT SUM(b.uchongzong) AS tp_sum FROM haokuai_user_list a left join haokuai_user_zhanghu b on a.id=b.userid  WHERE ( a.utid=6 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM haokuai_user_list as a WHERE ( a.utid=6 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `haokuai_saolei_userfa` WHERE ( userid=6 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(tixiane) AS tp_sum FROM `haokuai_user_tixian` WHERE ( userid=6 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant uheadimgurl - assumed 'uheadimgurl' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 85 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 102 行.
+NOTIC: [8] Use of undefined constant uvip - assumed 'uvip' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 103 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 109 行.
+NOTIC: [8] Use of undefined constant ustate - assumed 'ustate' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 110 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 117 行.
+NOTIC: [8] Use of undefined constant uheadimgurl - assumed 'uheadimgurl' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 85 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 102 行.
+NOTIC: [8] Use of undefined constant uvip - assumed 'uvip' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 103 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 109 行.
+NOTIC: [8] Use of undefined constant ustate - assumed 'ustate' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 110 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 117 行.
+NOTIC: [8] Use of undefined constant uheadimgurl - assumed 'uheadimgurl' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 85 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 102 行.
+NOTIC: [8] Use of undefined constant uvip - assumed 'uvip' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 103 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 109 行.
+NOTIC: [8] Use of undefined constant ustate - assumed 'ustate' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 110 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 117 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T12:18:53+08:00 ] 223.104.174.247 /index.php?m=Utm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T12:18:54+08:00 ] 223.104.174.247 /index.php?m=Utm&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T12:18:54+08:00 ] 223.104.174.247 /index.php?m=Utm&c=Login&a=ma
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T12:18:57+08:00 ] 223.104.174.247 /index.php?m=Utm&c=Login&a=ma&res=21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T12:19:11+08:00 ] 101.226.33.228 /index.php?m=Utm
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007812s ]
+
+[ 2017-01-02T12:19:11+08:00 ] 101.226.33.228 /index.php?m=Utm&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T12:19:16+08:00 ] 223.104.174.247 /index.php?m=Utm&c=Login&a=ajaxlogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: cishu C:\hongbao\1\Project\Utm\Controller\LoginController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `haokuai_sys_user` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `haokuai_sys_user` WHERE ( uname='caiyunlove' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: cishu C:\hongbao\1\Project\Utm\Controller\LoginController.class.php 第 34 行.
+
+[ 2017-01-02T12:20:21+08:00 ] 223.104.174.247 /index.php?m=Utm&c=Login&a=ma&res=21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T12:20:29+08:00 ] 223.104.174.247 /index.php?m=Utm&c=Login&a=ajaxlogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `haokuai_sys_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `haokuai_sys_user` WHERE ( uname='admin' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `haokuai_sys_user` SET `utime`='1483330829' WHERE `id` = 1 [ RunTime:0.0000s ]
+
+[ 2017-01-02T12:20:29+08:00 ] 113.108.0.14 /index.php?m=Utm&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: str C:\hongbao\1\Project\Utm\Controller\CommonController.class.php 第 16 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T12:20:29+08:00 ] 113.108.0.14 /index.php?m=Utm&c=Index&a=left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T12:20:29+08:00 ] 113.108.0.14 /index.php?m=Utm&c=Index&a=center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007813s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007813s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T12:20:29+08:00 ] 113.108.0.14 /index.php?m=Utm&c=Index&a=top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T12:20:29+08:00 ] 113.108.0.14 /index.php?m=Utm&c=Index&a=footer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007812s ]
+
+[ 2017-01-02T12:20:36+08:00 ] 113.108.0.14 /index.php?m=Utm&c=User&a=hb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_hb` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM haokuai_user_hb a WHERE a.tcode = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_hb` [ RunTime:0.0000s ]
+SQL: SELECT a.*,b.uickname,b.uheadimgurl,b.ustate,c.hzhifue FROM haokuai_user_hb as a left join haokuai_user_list as b on a.userid=b.id left join haokuai_hb c on a.hbid=c.id  WHERE a.tcode = 1 ORDER BY a.id desc LIMIT 0,8   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007813s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007813s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T12:20:39+08:00 ] 101.226.65.105 /index.php?m=Utm&c=Index&a=top
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T12:20:39+08:00 ] 101.226.65.105 /index.php?m=Utm&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007812s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007812s ]
+
+[ 2017-01-02T12:20:40+08:00 ] 113.108.0.14 /index.php?m=Utm&c=User&a=tixian
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: whe C:\hongbao\1\Project\Utm\Controller\UserController.class.php 第 129 行.
+SQL: SHOW COLUMNS FROM `haokuai_user_tixian` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM haokuai_user_tixian a LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: whe C:\hongbao\1\Project\Utm\Controller\UserController.class.php 第 132 行.
+SQL: SHOW COLUMNS FROM `haokuai_user_tixian` [ RunTime:0.0000s ]
+SQL: SELECT a.*,b.uickname,b.uheadimgurl FROM haokuai_user_tixian a left join haokuai_user_list b on a.userid=b.id  ORDER BY a.id desc LIMIT 0,8   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T12:20:40+08:00 ] 101.226.33.238 /index.php?m=Utm&c=Index&a=footer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T12:20:40+08:00 ] 101.226.33.238 /index.php?m=Utm&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T12:20:44+08:00 ] 180.163.2.117 /index.php?m=Utm&c=Index&a=left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.007813s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T12:20:44+08:00 ] 180.163.2.117 /index.php?m=Utm&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T12:20:46+08:00 ] 61.151.226.189 /index.php?m=Utm&c=User&a=hb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T12:20:46+08:00 ] 61.151.226.189 /index.php?m=Utm&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007813s ]
+
+[ 2017-01-02T12:20:46+08:00 ] 101.226.61.207 /index.php?m=Utm&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T12:20:46+08:00 ] 101.226.61.207 /index.php?m=Utm&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007813s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007813s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T12:20:47+08:00 ] 123.151.40.34 /index.php?m=Utm&c=User&a=chongzhi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: whe C:\hongbao\1\Project\Utm\Controller\UserController.class.php 第 160 行.
+SQL: SHOW COLUMNS FROM `haokuai_user_chongzhi` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM haokuai_user_chongzhi a LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: whe C:\hongbao\1\Project\Utm\Controller\UserController.class.php 第 163 行.
+SQL: SHOW COLUMNS FROM `haokuai_user_chongzhi` [ RunTime:0.0000s ]
+SQL: SELECT a.*,b.uickname,b.uheadimgurl FROM haokuai_user_chongzhi a left join haokuai_user_list b on a.userid=b.id  ORDER BY a.id desc LIMIT 0,8   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant uheadimgurl - assumed 'uheadimgurl' C:\hongbao\1\Project\Runtime\Cache\Utm\0b21ffbcdd81ca517c425ac69256c2df.php 第 58 行.
+NOTIC: [8] Use of undefined constant dcode - assumed 'dcode' C:\hongbao\1\Project\Runtime\Cache\Utm\0b21ffbcdd81ca517c425ac69256c2df.php 第 61 行.
+NOTIC: [8] Use of undefined constant dtime - assumed 'dtime' C:\hongbao\1\Project\Runtime\Cache\Utm\0b21ffbcdd81ca517c425ac69256c2df.php 第 62 行.
+NOTIC: [8] Use of undefined constant uheadimgurl - assumed 'uheadimgurl' C:\hongbao\1\Project\Runtime\Cache\Utm\0b21ffbcdd81ca517c425ac69256c2df.php 第 58 行.
+NOTIC: [8] Use of undefined constant dcode - assumed 'dcode' C:\hongbao\1\Project\Runtime\Cache\Utm\0b21ffbcdd81ca517c425ac69256c2df.php 第 61 行.
+NOTIC: [8] Use of undefined constant dtime - assumed 'dtime' C:\hongbao\1\Project\Runtime\Cache\Utm\0b21ffbcdd81ca517c425ac69256c2df.php 第 62 行.
+NOTIC: [8] Use of undefined constant uheadimgurl - assumed 'uheadimgurl' C:\hongbao\1\Project\Runtime\Cache\Utm\0b21ffbcdd81ca517c425ac69256c2df.php 第 58 行.
+NOTIC: [8] Use of undefined constant dcode - assumed 'dcode' C:\hongbao\1\Project\Runtime\Cache\Utm\0b21ffbcdd81ca517c425ac69256c2df.php 第 61 行.
+NOTIC: [8] Use of undefined constant dtime - assumed 'dtime' C:\hongbao\1\Project\Runtime\Cache\Utm\0b21ffbcdd81ca517c425ac69256c2df.php 第 62 行.
+NOTIC: [8] Use of undefined constant uheadimgurl - assumed 'uheadimgurl' C:\hongbao\1\Project\Runtime\Cache\Utm\0b21ffbcdd81ca517c425ac69256c2df.php 第 58 行.
+NOTIC: [8] Use of undefined constant dcode - assumed 'dcode' C:\hongbao\1\Project\Runtime\Cache\Utm\0b21ffbcdd81ca517c425ac69256c2df.php 第 61 行.
+NOTIC: [8] Use of undefined constant dtime - assumed 'dtime' C:\hongbao\1\Project\Runtime\Cache\Utm\0b21ffbcdd81ca517c425ac69256c2df.php 第 62 行.
+NOTIC: [8] Use of undefined constant uheadimgurl - assumed 'uheadimgurl' C:\hongbao\1\Project\Runtime\Cache\Utm\0b21ffbcdd81ca517c425ac69256c2df.php 第 58 行.
+NOTIC: [8] Use of undefined constant dcode - assumed 'dcode' C:\hongbao\1\Project\Runtime\Cache\Utm\0b21ffbcdd81ca517c425ac69256c2df.php 第 61 行.
+NOTIC: [8] Use of undefined constant dtime - assumed 'dtime' C:\hongbao\1\Project\Runtime\Cache\Utm\0b21ffbcdd81ca517c425ac69256c2df.php 第 62 行.
+NOTIC: [8] Use of undefined constant uheadimgurl - assumed 'uheadimgurl' C:\hongbao\1\Project\Runtime\Cache\Utm\0b21ffbcdd81ca517c425ac69256c2df.php 第 58 行.
+NOTIC: [8] Use of undefined constant dcode - assumed 'dcode' C:\hongbao\1\Project\Runtime\Cache\Utm\0b21ffbcdd81ca517c425ac69256c2df.php 第 61 行.
+NOTIC: [8] Use of undefined constant dtime - assumed 'dtime' C:\hongbao\1\Project\Runtime\Cache\Utm\0b21ffbcdd81ca517c425ac69256c2df.php 第 62 行.
+NOTIC: [8] Use of undefined constant uheadimgurl - assumed 'uheadimgurl' C:\hongbao\1\Project\Runtime\Cache\Utm\0b21ffbcdd81ca517c425ac69256c2df.php 第 58 行.
+NOTIC: [8] Use of undefined constant dcode - assumed 'dcode' C:\hongbao\1\Project\Runtime\Cache\Utm\0b21ffbcdd81ca517c425ac69256c2df.php 第 61 行.
+NOTIC: [8] Use of undefined constant dtime - assumed 'dtime' C:\hongbao\1\Project\Runtime\Cache\Utm\0b21ffbcdd81ca517c425ac69256c2df.php 第 62 行.
+NOTIC: [8] Use of undefined constant uheadimgurl - assumed 'uheadimgurl' C:\hongbao\1\Project\Runtime\Cache\Utm\0b21ffbcdd81ca517c425ac69256c2df.php 第 58 行.
+NOTIC: [8] Use of undefined constant dcode - assumed 'dcode' C:\hongbao\1\Project\Runtime\Cache\Utm\0b21ffbcdd81ca517c425ac69256c2df.php 第 61 行.
+NOTIC: [8] Use of undefined constant dtime - assumed 'dtime' C:\hongbao\1\Project\Runtime\Cache\Utm\0b21ffbcdd81ca517c425ac69256c2df.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T12:20:50+08:00 ] 180.153.205.254 /index.php?m=Utm&c=User&a=tixian
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T12:20:50+08:00 ] 180.153.205.254 /index.php?m=Utm&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T12:20:57+08:00 ] 123.151.40.34 /index.php?m=Utm&c=User&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: whe C:\hongbao\1\Project\Utm\Controller\UserController.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM haokuai_user_list a LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: whe C:\hongbao\1\Project\Utm\Controller\UserController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT a.*,b.uchongzong,b.uqianchong,b.uqianzheng,b.uzhengzong,b.uqianfa FROM haokuai_user_list as a left join haokuai_user_zhanghu as b on a.id=b.userid  ORDER BY a.id desc LIMIT 0,7   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_hb` [ RunTime:0.0078s ]
+SQL: SELECT SUM(hbe) AS tp_sum FROM `haokuai_user_hb` WHERE ( userid=10 and tcode=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT SUM(b.uchongzong) AS tp_sum FROM haokuai_user_list a left join haokuai_user_zhanghu b on a.id=b.userid  WHERE ( a.utid=10 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM haokuai_user_list as a WHERE ( a.utid=10 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_saolei_userfa` [ RunTime:0.0078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `haokuai_saolei_userfa` WHERE ( userid=10 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_tixian` [ RunTime:0.0000s ]
+SQL: SELECT SUM(tixiane) AS tp_sum FROM `haokuai_user_tixian` WHERE ( userid=10 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(hbe) AS tp_sum FROM `haokuai_user_hb` WHERE ( userid=9 and tcode=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT SUM(b.uchongzong) AS tp_sum FROM haokuai_user_list a left join haokuai_user_zhanghu b on a.id=b.userid  WHERE ( a.utid=9 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM haokuai_user_list as a WHERE ( a.utid=9 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `haokuai_saolei_userfa` WHERE ( userid=9 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(tixiane) AS tp_sum FROM `haokuai_user_tixian` WHERE ( userid=9 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(hbe) AS tp_sum FROM `haokuai_user_hb` WHERE ( userid=8 and tcode=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT SUM(b.uchongzong) AS tp_sum FROM haokuai_user_list a left join haokuai_user_zhanghu b on a.id=b.userid  WHERE ( a.utid=8 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM haokuai_user_list as a WHERE ( a.utid=8 ) LIMIT 1   [ RunTime:0.0078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `haokuai_saolei_userfa` WHERE ( userid=8 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(tixiane) AS tp_sum FROM `haokuai_user_tixian` WHERE ( userid=8 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(hbe) AS tp_sum FROM `haokuai_user_hb` WHERE ( userid=7 and tcode=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT SUM(b.uchongzong) AS tp_sum FROM haokuai_user_list a left join haokuai_user_zhanghu b on a.id=b.userid  WHERE ( a.utid=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM haokuai_user_list as a WHERE ( a.utid=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `haokuai_saolei_userfa` WHERE ( userid=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(tixiane) AS tp_sum FROM `haokuai_user_tixian` WHERE ( userid=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(hbe) AS tp_sum FROM `haokuai_user_hb` WHERE ( userid=6 and tcode=1 ) LIMIT 1   [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT SUM(b.uchongzong) AS tp_sum FROM haokuai_user_list a left join haokuai_user_zhanghu b on a.id=b.userid  WHERE ( a.utid=6 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `haokuai_user_list` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM haokuai_user_list as a WHERE ( a.utid=6 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `haokuai_saolei_userfa` WHERE ( userid=6 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(tixiane) AS tp_sum FROM `haokuai_user_tixian` WHERE ( userid=6 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant uheadimgurl - assumed 'uheadimgurl' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 85 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 102 行.
+NOTIC: [8] Use of undefined constant uvip - assumed 'uvip' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 103 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 109 行.
+NOTIC: [8] Use of undefined constant ustate - assumed 'ustate' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 110 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 117 行.
+NOTIC: [8] Use of undefined constant uheadimgurl - assumed 'uheadimgurl' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 85 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 102 行.
+NOTIC: [8] Use of undefined constant uvip - assumed 'uvip' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 103 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 109 行.
+NOTIC: [8] Use of undefined constant ustate - assumed 'ustate' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 110 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 117 行.
+NOTIC: [8] Use of undefined constant uheadimgurl - assumed 'uheadimgurl' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 85 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 102 行.
+NOTIC: [8] Use of undefined constant uvip - assumed 'uvip' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 103 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 109 行.
+NOTIC: [8] Use of undefined constant ustate - assumed 'ustate' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 110 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 117 行.
+NOTIC: [8] Use of undefined constant uheadimgurl - assumed 'uheadimgurl' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 85 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 102 行.
+NOTIC: [8] Use of undefined constant uvip - assumed 'uvip' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 103 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 109 行.
+NOTIC: [8] Use of undefined constant ustate - assumed 'ustate' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 110 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 117 行.
+NOTIC: [8] Use of undefined constant uheadimgurl - assumed 'uheadimgurl' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 85 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 95 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 97 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 102 行.
+NOTIC: [8] Use of undefined constant uvip - assumed 'uvip' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 103 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 109 行.
+NOTIC: [8] Use of undefined constant ustate - assumed 'ustate' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 110 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\d1ad44f68cf62fe53c3e21dc0c204d56.php 第 117 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T12:21:04+08:00 ] 101.226.33.203 /index.php?m=Utm&c=User&a=chongzhi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T12:21:04+08:00 ] 101.226.33.203 /index.php?m=Utm&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007813s ]
+
+[ 2017-01-02T12:21:05+08:00 ] 223.104.174.247 /index.php?m=Utm&c=Index&a=index1001信息管理系统界面
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:index1001信息管理系统界面
+
+[ 2017-01-02T12:21:05+08:00 ] 223.104.174.247 /index.php?m=Utm&c=Index&a=index1001信息管理系统界面
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:index1001信息管理系统界面
+
+[ 2017-01-02T12:21:05+08:00 ] 223.104.174.247 /index.php?m=Utm&c=Index&a=index1001信息管理系统界面
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:index1001信息管理系统界面
+
+[ 2017-01-02T12:21:29+08:00 ] 223.104.174.247 /index.php?m=Utm&c=Index&a=index1001信息管理系统界面
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:index1001信息管理系统界面
+
+[ 2017-01-02T12:21:29+08:00 ] 223.104.174.247 /index.php?m=Utm&c=Index&a=index1001信息管理系统界面
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007812s ]
+ERR: 非法操作:index1001信息管理系统界面
+
+[ 2017-01-02T12:21:29+08:00 ] 223.104.174.247 /index.php?m=Utm&c=Index&a=index1001信息管理系统界面
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007813s ]
+ERR: 非法操作:index1001信息管理系统界面
+
+[ 2017-01-02T12:21:30+08:00 ] 223.104.174.247 /index.php?m=Utm&c=Index&a=index1001信息管理系统界面
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:index1001信息管理系统界面
+
+[ 2017-01-02T12:21:30+08:00 ] 223.104.174.247 /index.php?m=Utm&c=Index&a=index1001信息管理系统界面
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:index1001信息管理系统界面
+
+[ 2017-01-02T12:21:39+08:00 ] 113.108.0.14 /index.php?m=Utm&c=Hb&a=show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Utm\Controller\HbController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') C:\hongbao\1\Project\Utm\Controller\HbController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `haokuai_hb` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `haokuai_hb` WHERE ( htype=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `haokuai_hb` WHERE ( htype=1 ) ORDER BY hpaixu desc,id asc LIMIT 0,8   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant hzhifue - assumed 'hzhifue' C:\hongbao\1\Project\Runtime\Cache\Utm\59b045d47d82ff3c6dedcfe0ca530eaf.php 第 53 行.
+NOTIC: [8] Use of undefined constant hgeshu - assumed 'hgeshu' C:\hongbao\1\Project\Runtime\Cache\Utm\59b045d47d82ff3c6dedcfe0ca530eaf.php 第 54 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\59b045d47d82ff3c6dedcfe0ca530eaf.php 第 58 行.
+NOTIC: [8] Use of undefined constant hcode - assumed 'hcode' C:\hongbao\1\Project\Runtime\Cache\Utm\59b045d47d82ff3c6dedcfe0ca530eaf.php 第 59 行.
+NOTIC: [8] Use of undefined constant hzhifue - assumed 'hzhifue' C:\hongbao\1\Project\Runtime\Cache\Utm\59b045d47d82ff3c6dedcfe0ca530eaf.php 第 53 行.
+NOTIC: [8] Use of undefined constant hgeshu - assumed 'hgeshu' C:\hongbao\1\Project\Runtime\Cache\Utm\59b045d47d82ff3c6dedcfe0ca530eaf.php 第 54 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\59b045d47d82ff3c6dedcfe0ca530eaf.php 第 58 行.
+NOTIC: [8] Use of undefined constant hcode - assumed 'hcode' C:\hongbao\1\Project\Runtime\Cache\Utm\59b045d47d82ff3c6dedcfe0ca530eaf.php 第 59 行.
+NOTIC: [8] Use of undefined constant hzhifue - assumed 'hzhifue' C:\hongbao\1\Project\Runtime\Cache\Utm\59b045d47d82ff3c6dedcfe0ca530eaf.php 第 53 行.
+NOTIC: [8] Use of undefined constant hgeshu - assumed 'hgeshu' C:\hongbao\1\Project\Runtime\Cache\Utm\59b045d47d82ff3c6dedcfe0ca530eaf.php 第 54 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\59b045d47d82ff3c6dedcfe0ca530eaf.php 第 58 行.
+NOTIC: [8] Use of undefined constant hcode - assumed 'hcode' C:\hongbao\1\Project\Runtime\Cache\Utm\59b045d47d82ff3c6dedcfe0ca530eaf.php 第 59 行.
+NOTIC: [8] Use of undefined constant hzhifue - assumed 'hzhifue' C:\hongbao\1\Project\Runtime\Cache\Utm\59b045d47d82ff3c6dedcfe0ca530eaf.php 第 53 行.
+NOTIC: [8] Use of undefined constant hgeshu - assumed 'hgeshu' C:\hongbao\1\Project\Runtime\Cache\Utm\59b045d47d82ff3c6dedcfe0ca530eaf.php 第 54 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\hongbao\1\Project\Runtime\Cache\Utm\59b045d47d82ff3c6dedcfe0ca530eaf.php 第 58 行.
+NOTIC: [8] Use of undefined constant hcode - assumed 'hcode' C:\hongbao\1\Project\Runtime\Cache\Utm\59b045d47d82ff3c6dedcfe0ca530eaf.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: uk C:\hongbao\1\Project\Utm\Controller\IndexController.class.php 第 53 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-02T12:21:47+08:00 ] 223.104.174.247 /index.php?m=Utm&c=Index&a=index1001信息管理系统界面
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:index1001信息管理系统界面
+
+[ 2017-01-02T12:21:47+08:00 ] 223.104.174.247 /index.php?m=Utm&c=Index&a=index1001信息管理系统界面
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:index1001信息管理系统界面
+
+[ 2017-01-02T12:21:47+08:00 ] 223.104.174.247 /index.php?m=Utm&c=Index&a=index1001信息管理系统界面
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:index1001信息管理系统界面
+
+[ 2017-01-02T12:21:58+08:00 ] 180.153.206.22 /index.php?m=Utm&c=Hb&a=show
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Utm\Controller\HbController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') C:\hongbao\1\Project\Utm\Controller\HbController.class.php 第 7 行.
+
+[ 2017-01-02T12:21:58+08:00 ] 180.153.206.22 /index.php?m=Utm&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
