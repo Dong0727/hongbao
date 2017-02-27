@@ -10,6 +10,7 @@ class WxloginController extends \Think\Controller
 		$urls = I('urls');
 		$sysconfig = M('sys_config')->find();
 		$ubeiopenid = $this->geturl($urls, 3);
+		dump($ubeiopenid);exit;
 		if ($sysconfig['cbeicode'] == 1 && $ubeiopenid == '') {
 			$url = 'http://' . $_SERVER['HTTP_HOST'] . U('Wap/Wxlogin/getbeiuopenid?urls=' . $urls);
 			$url = urlencode($url);
