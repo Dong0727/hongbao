@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="__PUBLIC__/Admin/css/base.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Admin/css/right.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/css/page.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="__PUBLIC__/js/jquery-2.1.1.min.js"></script>
+<script>
+$(document).ready(function(){
+   $(function(){
+      $('.rightinfo tbody tr:odd').addClass('odd')
+   });
+   $('.but1').click(function(){
+	  var userid=$(this).parent().find("input[name='userid']").val();
+	  var par = $(this);
+		 par.hide();
+	     $.post("{:U('ajaxjiesuan')}",{userid:userid},function(res){	
+		     if(res.code ==2){
+			    alert('结算成功');		    
+			 }
+		     if(res.code ==3){
+			    alert('结算失败，请查看系统日志失败原因');	
+				par.show();	    
+			 }
+		     if(res.code ==4){
+			    alert('今日付款次数上限了');		
+				par.show();	 
+			 }
+		 },'json');  
+   });
+   $('.btnjiesuan').click(function(){
+	   location.href = "{:U('jiesuanall')}";
+   });
+});
+function del(){ if(confirm("确定要删除吗？")) {   return true;  }  else  {  return false;  } }
+</script>
+</head>
+
+<body>
+<div class="place"> <span>位置：</span>
+  <ul class="placeul">
+    <li><a href="{:U('Index/center')}">首页</a></li>
+    <li>代理结算</li>
+  </ul>
+</div>
+<div class="rightinfo">
+  <div class="tools">
+    <ul class="toolbar">
+      <li style="background:#FFF; text-indent:1em; border:0">
+        <form name="fsoso1" method="post" action="{:U('tixian')}">
+          用户ID <input name="sci" type="text" class="dfinput" style="width:100px" >
+          <input name="submit" class="btn" value="查询" type="submit">      
+          <input class="btn btnjiesuan" value="一键结算" type="button">    
+        </form>        
+      </li>
+    </ul>
+  </div>
+  <table class="tablelist">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Openid</th>
+        <th width="17%">昵称</th>
+        <th width="9%">头像</th>
+        <th width="15%">未结算</th>
+        <th width="17%">时间</th>
+          <eq name="sysconfig[cyongjinfa]" value="2">
+        <th>操作</th>
+        </eq>
+      </tr>
+    </thead>
+    <tbody>
+      <foreach name="tixian" item="v">
+        <tr height="40" align="center">
+          <td>{$v['userid']}</td>
+          <td>{$v['uopenid']}</td>
+          <td>{$v['uickname']}</td>
+          <td><notempty name="v[uheadimgurl]"><img src="{$v['uheadimgurl']}" height="54" width="54"/></notempty></td>
+          <td>{$v['tixiane']/100}</td>
+          <td>{$v[ttime]|date="Y-m-d H:i:s",###}</td>
+          <eq name="sysconfig[cyongjinfa]" value="2">
+          <td>
+             <input type="hidden" name="userid" value="{$v[userid]}">
+             <input name="button" type="button" class="btn but1" style="width:100px" value="结算"/>
+          </td>
+          </eq>
+        </tr>
+      </foreach>
+    </tbody>
+  </table>
+</div>
+<div class="pages"> {$page}
+  <empty name="tixian"><font color='#ff0000'>暂无数据</font></empty>
+</div>
+</body>
+</html>

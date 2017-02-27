@@ -1,0 +1,110 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>个人中心</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<script src="__PUBLIC__/js/jquery-2.1.1.min.js"></script>
+<link href="__PUBLIC__/css/base.css?v={:rand(0,99)}" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/Weixin/css/index.css?v={:rand(0,99)}" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/Weixin/css/head.css?v={:rand(0,99)}" rel="stylesheet" type="text/css">
+<style></style>
+<script>
+$(document).ready(function () { 
+   $('.chongzhi').click(function(){
+	   $.post("{:U('Ajax/getchongnum')}",{},function(res){
+		   if(res.code==1){
+	          var djine = parseFloat($('input[name="djine"]').val());
+	          if(isNaN(djine) || djine < 0){
+			     $('.msgbox .txt').text('请输入金额！');
+			     $('.msgbox').show();
+			     return false;
+	          }
+	          location.href = "{:U('Chongzhi/chong?ctype=3&djine=')}"+djine;
+		   } else {
+			     $('.msgbox .txt').text('今天充值上限，请明天再来！');
+			     $('.msgbox').show();
+			     return false;
+		   }
+	   },'json');
+   });
+   $('.tixian').click(function(){
+	   $(this).unbind();
+	   var djine = parseFloat($('#yue').text());
+	   if(djine < 1){
+		    $('.msgbox .txt').text('最少一元才能提现！');
+		    $('.msgbox').show();
+			return false;
+	   }
+	   $.post("{:U('Ajax/getfaqiancishu')}",{},function(res){
+		   if(res.cishu < 99){
+			    $.post("{:U('Tixian/wxtixian')}",{},function(jes){
+				    if(jes.code == 1){
+			           $('.msgbox .txt').text('提现成功！');
+		               $('.msgbox').show();
+					   $('#yue').text(0);
+					}
+				    if(jes.code == 2){
+			           $('.msgbox .txt').text('系统繁忙，稍后再试！');
+		               $('.msgbox').show();
+					}
+				    if(jes.code == 3){
+			           $('.msgbox .txt').text('最少一元才能提现！');
+		               $('.msgbox').show();
+					}	
+				},'json');
+		   } else {
+			    $('.msgbox .txt').text('今天超过上限，请明天再来！');
+		        $('.msgbox').show();
+		   }
+	   },'json');   
+   });
+});
+</script>
+</head>
+<body>
+<include file="Index/head" /> 
+<!--
+<ul class="ucenter-index member publickuang ul1">
+  <li>
+    <h3>{$userzhanghu[uhbqian]/100+$userzhanghu[uqianzheng]/100}</h3>
+    <p>可提现</p>
+  </li>
+  <li>
+    <h3>{$userzhanghu['uqianchong']/100}</h3>
+    <p>账户余额</p>
+  </li>
+  <li>
+    <h3>{$userzhanghu['uchongzong']/100}</h3>
+    <p>总充值</p>
+  </li>
+</ul>
+-->
+<ul class="ucenter-index member publickuang">
+  <li>
+    <h3>{$jiazunum|intval}</h3>
+    <p>推广人数</p>
+  </li>
+  <li>
+    <h3>{$userzhanghu['uzhengzong']/100}</h3>
+    <p>总佣金</p>
+  </li>
+  <li>
+    <h3>{$userzhanghu['uqianzheng']/100}</h3>
+    <p>待发佣金</p>
+  </li>
+</ul>
+<ul class="ucenter-index nav publickuang">
+  <li><font color="#ff2c4c">￥</font>
+    <input name="djine" value="100" type="number">
+    <span class="current chongzhi">充值</span> </li>
+  <li>可提现 <font color="#ff2c4c">￥<font id="yue">{$userzhanghu['uqianchong']/100}</font></font><span class="current tixian">提现</span></li>
+  <li> <a href="{:U('Ucenter/hblist')}"> <img src="__PUBLIC__/Weixin/img/i2.png" class="imgico"> 红包记录 <img src="__PUBLIC__/Weixin/img/1.png" class="imgstart"></a> </li>
+  <li><a href="{:U('Ucenter/saoleihb')}"> <img src="__PUBLIC__/Weixin/img/i2.png" class="imgico"> 扫雷记录 <img src="__PUBLIC__/Weixin/img/1.png" class="imgstart"></a></li>
+  <li><a href="{:U('Ucenter/chonglist')}"> <img src="__PUBLIC__/Weixin/img/i3.png" class="imgico"> 充值记录 <img src="__PUBLIC__/Weixin/img/1.png" class="imgstart"></a> </li>
+  <li><a href="{:U('Index/yongjin')}"> <img src="__PUBLIC__/Weixin/img/i2.png" class="imgico"> 佣金记录 <img src="__PUBLIC__/Weixin/img/1.png" class="imgstart"></a></li>
+  <li><a href="{:U('Index/kefu')}"> <img src="__PUBLIC__/Weixin/img/i1.png" class="imgico"> 联系客服 <img src="__PUBLIC__/Weixin/img/1.png" class="imgstart"></a></li>
+</ul>
+<include file="Index/menu" />
+</body>
+</html>

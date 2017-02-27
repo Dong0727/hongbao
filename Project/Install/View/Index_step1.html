@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>程序安装向导</title>
+<link rel="stylesheet" href="__PUBLIC__/Install/css/index.css?v={:rand(0,20)}" />
+</head>
+
+<body>
+<div class="wrap">
+  <div class="header">
+    <h1 class="logo">程序安装向导</h1>
+  </div>
+  <div class="step">
+    <ul class="unstyled">
+      <li class="current"><em>1</em>检测环境</li>
+      <li><em>2</em>创建数据</li>
+      <li><em>3</em>完成安装</li>
+    </ul>
+  </div>
+  <div class="server">
+    <table width="100%">
+      <tr>
+        <td class="td1">环境检测</td>
+        <td class="td1" width="25%">推荐配置</td>
+        <td class="td1" width="25%">当前状态</td>
+        <td class="td1" width="25%">最低要求</td>
+      </tr>
+      <tr>
+        <td>操作系统</td>
+        <td>类UNIX</td>
+        <td><i class="fa-rig">{$os}</i></td>
+        <td>不限制</td>
+      </tr>
+      <tr>
+        <td>PHP版本</td>
+        <td>>5.3.x</td>
+        <td><i class="fa-rig">{$phpversion}</i></td>
+        <td>5.3.0</td>
+      </tr>
+      <tr>
+        <td> PDO</td>
+        <td>开启</td>
+        <td> {$pdo} </td>
+        <td>开启</td>
+      </tr>
+      <tr>
+        <td> PDO_MySQL</td>
+        <td>开启</td>
+        <td> {$pdo_mysql} </td>
+        <td>开启</td>
+      </tr>
+      <tr>
+        <td>附件上传</td>
+        <td>>2M</td>
+        <td> {$upload_size} </td>
+        <td>不限制</td>
+      </tr>
+      <tr>
+        <td>SESSION</td>
+        <td>开启</td>
+        <td> {$session} </td>
+        <td>开启</td>
+      </tr>
+    </table>
+    <table width="100%">
+      <tr>
+        <td class="td1">目录、文件权限检查</td>
+        <td class="td1" width="25%">写入</td>
+        <td class="td1" width="25%">读取</td>
+      </tr>
+      <foreach name="folders" item="vo" key="dir">
+        <tr>
+          <td> ./{$dir} </td>
+          <td><if condition="$vo['w']"> <i class="fa-rig">可写</i>
+              <else/>
+              <i class="fa-err">不可写</i></if></td>
+          <td><if condition="$vo['r']"> <i class="fa-rig">可读</i>
+              <else/>
+              <i class="fa-err">不可读</i></if></td>
+        </tr>
+      </foreach>
+    </table>
+  </div>
+  <div class="bottom text-center"> <a href="{:U('Index/step1')}" class="btn-primary">重新检测</a> <a href="{:U('Index/step2')}" class="btn-primary">下一步</a> </div>
+</div>
+<div class="footer"> &copy; 2015-{:date('Y')} </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>代理推广</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<script type="text/javascript" src="__PUBLIC__/js/jquery-2.1.1.min.js"></script>
+<link href="__PUBLIC__/css/base.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/Weixin/css/index.css?v={:rand(0,99)}" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/Weixin/css/head.css?v={:rand(0,99)}" rel="stylesheet" type="text/css">
+<style></style>
+<script>
+$(document).ready(function () { 
+	$(function(){
+	});
+});
+</script>
+</head>
+<body>
+<include file="head" />
+
+<div class="index-daili publickuang">
+   <notempty name='news[ncontent]'><div class="yongjin">{$news[ncontent]|htmlspecialchars_decode}</div></notempty>
+   <div class="headtitle">长按保存下面的代理图片</div>
+   <div class="dailiimg">
+    <img src="./Uploads/daili/tma{$Think.session.userid}.png">
+   </div>
+</div>
+<include file="Index/menu" />
+</body>
+</html>

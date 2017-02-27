@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>欢迎登录后台管理系统</title>
+<link href="__PUBLIC__/Admin/css/base.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Admin/css/right.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="__PUBLIC__/js/jquery-2.1.1.min.js"></script>
+<script>
+$(document).ready(function(){
+   $(function(){
+      $('.rightinfo tbody tr:odd').css("backgroundColor","#f5f8fa");
+   });
+});
+function del(){ if(confirm("确定要删除吗？")) {   return true;  }  else  {  return false;  } }
+</script>
+</head>
+
+<body>
+<div class="place"> <span>位置：</span>
+  <ul class="placeul">
+    <li><a href="{:U('Index/center')}">首页</a></li>
+    <li><a href="{:U('Wxhuifu/keyleixing')}">微信回复</a></li>
+    <li><eq name="stype" value="1">关键词回复<else/>关注回复</eq></li>
+  </ul>
+</div>
+<div class="rightinfo">
+  <div class="tools"> 
+    <ul class="toolbar">
+
+      <if condition="(empty($seldata) OR $stype eq 1 )">
+      <li><a href="{:U('Wxhuifu/keyadd?stype='.$stype)}"><span><img src="__PUBLIC__/Admin/image/t01.png" /></span>添加关键词</a></li> 
+      </if>
+
+      <li style="background:#FFF; text-indent:1em; border:0">
+      <form name="fsoso" method="post" action="{:U('Wxhuifu/keylist?stype='.$stype)}">关键词：
+         <input name="sname" type="text" class="dfinput" style="width:200px">
+         <input name="submit" type="submit" class="btn" value="查询" >
+      </form>
+      </li>
+    </ul>
+  </div>
+    <table class="tablelist">
+    <thead>
+      <tr>
+        <th>关键词</th>
+        <th>回复类型</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <foreach name="seldata" item="v">
+      <tr align="center">
+        <td>{$v.sname}</td>
+        <td><eq name='v.kcode' value='0'><font color='#FF0000'> 文本 </font> <else/> <font color='#FF0000'> 图文 </font></eq></td>
+        <td>
+        <img src="__PUBLIC__/Admin/image/leftico03.png" width="14">
+        <a href="{:U('Wxhuifu/keyadd?nid='.$v['id'].'&stype='.$stype)}">编辑</a>&nbsp;
+        <img src="__PUBLIC__/Admin/image/leftico01.png" width="14"> 
+        <a href="{:U('Wxhuifu/keyconlist?kid='.$v['id'].'&stype='.$stype)}">内容管理</a>&nbsp;
+        <img src="__PUBLIC__/Admin/image/t03.png" width="14">
+        <a onClick="return del()" href="{:U('Wxhuifu/keydel?nid='.$v['id'].'&stype='.$stype.'&nowpage='.$nowpage)}" class="tablelink">删除</a>
+        </td>
+      </tr>
+    </foreach>
+      
+    </tbody>
+  </table>
+</div>
+<div style=" width:90%; padding:10px 0 10px 0; text-align:center">
+   {$page}
+</div>
+</body>
+</html>

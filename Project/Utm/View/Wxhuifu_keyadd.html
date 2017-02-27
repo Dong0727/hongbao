@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>欢迎登录后台管理系统</title>
+<link href="__PUBLIC__/Admin/css/base.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Admin/css/right.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="place"> <span>位置：</span>
+  <ul class="placeul">
+    <li><a href="{:U('Index/center')}">首页</a></li>
+    <li><a href="{:U('Wxhuifu/keyleixing')}">微信回复</a></li>
+    <li><a href="{:U('Wxhuifu/keylist?stype='.$stype)}"><eq name="stype" value="1">关键词回复<else/>关注回复</eq></a></li>
+    <li>编辑</li>
+  </ul>
+</div>
+<div class="formbody">
+  <div class="formtitle"><span>基本信息</span></div>
+  <form name="fadd" method="post" action="{:U('Wxhuifu/keysave?stype='.$stype.'&nid='.$seldata['id'])}" >
+   <ul class="forminfo">
+    <li>
+      <label>关键词</label>
+      <input name="sname" type="text" value="{$seldata['sname']}" class="dfinput" >
+      <i>关键词“默认”，找不到关键词时推送默认关键词的内容</i></li>
+    <li>
+      <label>消息类型</label>
+      <cite>
+        <input type="radio" name="kcode" value="0" <if condition="($seldata['kcode'] eq 0) OR ($seldata['kcode'] eq '') ">checked</if> > 文本消息&nbsp;
+        <input type="radio" name="kcode" value="1" <eq name="seldata['kcode']" value="1">checked</eq> > 图文消息
+      </cite>
+      <i></i></li>
+    <li>
+      <label>&nbsp;</label>
+      <input name="button" type="submit" class="btn" value="确认保存"/>
+    </li>
+  </ul>
+  </form>
+</div>
+</body>
+</html>

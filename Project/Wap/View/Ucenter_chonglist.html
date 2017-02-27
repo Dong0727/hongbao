@@ -1,0 +1,44 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>充值记录</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<script type="text/javascript" src="__PUBLIC__/js/jquery-2.1.1.min.js"></script>
+<link href="__PUBLIC__/css/base.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/Weixin/css/index.css?v={:rand(0,99)}" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/Weixin/css/head.css?v={:rand(0,99)}" rel="stylesheet" type="text/css">
+<style></style>
+<script>
+$(document).ready(function () { 
+	$(function(){
+		  $.get("{:U('Ajax/chongzhi')}",{},function(res){
+			 $(".ulist").append(res.html);
+		  },'json');
+	});
+	
+	$(window).scroll(function(){
+	   var scrollTop = $(this).scrollTop();
+	   var scrollHeight = $(document).height();
+	   var windowHeight = $(this).height();
+	   if(scrollTop + windowHeight >= scrollHeight){
+		  var page = parseInt($("input[name='page']").val());
+		  $.get("{:U('Ajax/chongzhi')}",{page:page},function(res){
+			 $(".ulist").append(res.html);
+			 $("input[name='page']").val(page+1);
+		  },'json');
+	   }
+   });
+   
+   
+});
+</script>
+</head>
+<body>
+<input type="hidden" name="page" value="1">
+<include file="Index/head" />
+<div class="headtitle">充值记录</div>
+<ul class="ucenter-chongzhi ulist publickuang"></ul>
+<include file="Index/menu" />
+</body>
+</html>

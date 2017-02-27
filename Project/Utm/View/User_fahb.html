@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="__PUBLIC__/Admin/css/base.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Admin/css/right.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/css/page.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="__PUBLIC__/js/jquery-2.1.1.min.js"></script>
+<script>
+$(document).ready(function(){
+   $(function(){
+      $('.rightinfo tbody tr:odd').addClass('odd')
+   });
+});
+function del(){ if(confirm("确定要删除吗？")) {   return true;  }  else  {  return false;  } }
+</script>
+</head>
+
+<body>
+<div class="place"> <span>位置：</span>
+  <ul class="placeul">
+    <li><a href="{:U('Index/center')}">首页</a></li>
+    <li><a href="{:U('index')}">用户管理</a></li>
+    <li>发包记录</li>
+  </ul>
+</div>
+<div class="rightinfo">
+  <table class="tablelist">
+    <thead>
+      <tr>
+        <th>用户ID</th>
+        <th>发包金额(元)</th>
+        <th>个数</th>
+        <th>尾数</th>
+        <th>已拆（个）</th>
+        <th>未拆（个）</th>
+        <th>时间</th>
+        <th>详情</th>
+      </tr>
+    </thead>
+    <tbody>
+      <foreach name="fahb" item="v">
+        <tr height="40" align="center">
+          <td>{$v[userid]}</td>
+          <td>{$v['hzhifue']/100}</td>
+          <td>{$v['hgeshu']}</td>
+          <td>{$v['hweishu']}</td>
+          <td>{$v['yilingnum']}</td>
+          <td>{$v['weilingnum']}</td>
+          <td>{$v[htime]|date="Y-m-d H:i:s",###}</td>
+          <td><a href="{:U('fahblist?faid='.$v[id].'&userid='.$userid)}">查看详情</a></td>
+        </tr>
+      </foreach>
+    </tbody>
+  </table>
+</div>
+<div class="pages"> {$page}
+  <empty name="fahb"><font color='#ff0000'>暂无数据</font></empty>
+</div>
+</body>
+</html>

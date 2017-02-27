@@ -1,0 +1,151 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>猜一猜 扫雷</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<script type="text/javascript" src="__PUBLIC__/js/jquery-2.1.1.min.js"></script>
+<link href="__PUBLIC__/css/base.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/Weixin/css/index.css?v={:rand(0,99)}" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/Weixin/css/head.css?v={:rand(0,99)}" rel="stylesheet" type="text/css">
+<style></style>
+<script>
+$(document).ready(function () { 
+    $('.hb2 .chai').click(function(){		
+		var p = $(this).parent();
+		var indexli = p.index();
+		$('input[name="hbid"]').val(indexli);
+		$('#chosebox').show();
+	});
+
+    $('.saolei-index1 .but1').click(function(){
+		$('.hb5').show();
+	});	
+	
+    $('.saolei-index1 .but2').click(function(){
+		location.href="{:U('fahb')}";
+	});
+	
+    $('.hb5 .dbut1').click(function(){
+		var hweishu = parseInt($("input[name='hweishu']").val());
+		if(isNaN(hweishu) || hweishu > 9 || hweishu < 0){
+			$('.msgbox .txt').text('预测尾数请输入0-9之间的数字');
+			$('.msgbox').show();
+			return false;
+		}
+		$('#dengdai').show();
+		$.post("{:U('ajaxfahb')}",{hweishu:hweishu,hbid:{$hbset[id]|intval}},function(res){
+			$('#dengdai').hide();
+			if(res.code == 1){
+			    $('.msgbox .txt').text('请先充值');
+			    $('.msgbox').show();
+				setTimeout(locationurl,2000);	
+			} else {
+				$('.hb5').hide();
+				location.href="{:U('hb?hbid='.$hbset[id])}";
+			}
+		},'json');
+	});
+    $('.hb5 .dbut2').click(function(){
+		$('.hb5').hide();
+	});
+	
+	$('#chosebox .but').click(function(){
+	    var xuanze = $(this).index(); //1存入账户 2存入零钱
+		var indexli  = $('input[name="hbid"]').val();
+		$('#dengdai').show();
+		$.post("{:U('ajaxchai')}",{hbid:{$hbset[id]|intval},xuanze:xuanze},function(res){
+		   $('#dengdai').hide();
+		   $('#chosebox').hide();
+		   if(res.code == 1){
+			    $('.msgbox .txt').text('手太慢，红包被拆完了，可以发红包试试！');
+			    $('.msgbox').show();
+		   }
+		   if(res.code == 2) {
+			    $('.msgbox .txt').text('余额不足，请先充值');
+			    $('.msgbox').show();
+				setTimeout(locationurl,2000);	
+		   }
+		   if(res.code == 3) {
+			    $('.msgbox .txt').html(res.txt);
+			    $('.msgbox').show();
+				$('.hb2 li').eq(indexli).find('.chai').hide();
+				$('.hb2 li').eq(indexli).find('.xian').show();
+				$('.hb2 li').eq(indexli).find('p').html(res.hbetxt);
+		   }
+		   if(res.code == 4){
+			  $('.msgbox .txt').text('系统繁忙，请稍候再试！');
+		      $('.msgbox').show();
+		   }
+		},'json');
+	});
+	
+});
+function locationurl(){
+   location.href = "{:U('Ucenter/index')}";
+}
+</script>
+</head>
+<body>
+<include file="Index:head" />
+<input type="hidden" name="hbid">
+<div class="saolei-index1 clearfix">
+  <p class="but1">我要发{$hbset[hbzhifu]/100}元红包</p>
+  <p class="but2">我发出的红包</p>
+</div>
+<div class="hb2">
+  <ul class="clearfix">
+    <foreach name="fahb" item="v">
+      <li><img src="__PUBLIC__/Weixin/img/4.gif" class="chai"> <img src="__PUBLIC__/Weixin/img/5.png" class="xian">
+        <p class="xian"></p>
+      </li>
+    </foreach>
+  </ul>
+</div>
+<div class="hb5">
+  <div class="box">
+    <div class="dform">
+      <p class="p1">红包金额</p>
+      <p class="p2">
+        <input name="" type="text" readonly  value="{$hbset[hbzhifu]/100}" style="text-align:center;">
+      </p>
+      <p class="p3">元</p>
+    </div>
+    <div class="dform">
+      <p class="p1">红包个数</p>
+      <p class="p2">
+        <input name="" type="text" readonly value="{$hbset[hgeshu]}" style="text-align:center">
+      </p>
+      <p class="p3"></p>
+    </div>
+    <div class="dform noborder">
+      <p class="p1">预测尾数</p>
+      <p class="p2">
+        <input name="hweishu" type="text" placeholder="0-9之间的数字">
+      </p>
+      <p class="p3"></p>
+    </div>
+    <div class="dbutton clearfix">
+      <div class="dbut1">发红包</div>
+      <div class="dbut2">取消</div>
+    </div>
+    <div class="shuoming font1">说明：尾数在0-9之间，玩家踩中该尾数红包会支付给您{$hbset[hbzhifu]/100}元</div>
+  </div>
+</div>
+<style>
+#chosebox { position: fixed; left: 0; right: 0; top: 0; bottom: 0; background-color: rgba(0,0,0,0.5); text-align: center; z-index: 9999; display:none; }
+#chosebox .box { width: 90%; margin: 0 auto; margin-top: 30%; background: #FFF; border-radius: 5px; line-height: 40px; padding-bottom: 20px; }
+#chosebox .box .title { color: #666; font-size: 18px; }
+#chosebox .box .txt {  padding:20px; line-height:25px; word-break:break-all; }
+#chosebox .box .but { width: 40%; margin: 0 auto; text-align: center; color: #FFF; background-color: #04be02; border-radius: 5px; margin-top: 20px; }
+</style>
+<div id="chosebox">
+  <div class="box">
+    <p class="title">红包存放选择</p>
+    <p class="but">存入账户</p>
+    <p class="but">存入零钱</p>
+  </div>
+</div>
+<include file="Index/menu" />
+</body>
+</html>

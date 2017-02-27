@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="__PUBLIC__/Admin/css/base.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Admin/css/right.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/css/page.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="__PUBLIC__/js/jquery-2.1.1.min.js"></script>
+<script>
+$(document).ready(function(){
+   $(function(){
+      $('.rightinfo tbody tr:odd').addClass('odd')
+   });
+});
+function del(){ if(confirm("确定要删除吗？")) {   return true;  }  else  {  return false;  } }
+</script>
+<style>
+.ulbox li { float: left; padding: 10px; border: solid 1px #d7e4ea; margin-right: 10px; text-align: center; width: 160px; height: 60px; line-height: 30px; }
+.ulbox li:hover { border: solid 1px #FF8000; }
+</style>
+</head>
+
+<body>
+<div class="place"> <span>位置：</span>
+  <ul class="placeul">
+    <li><a href="{:U('Index/center')}">首页</a></li>
+    <li><a href="{:U('index')}">全国省列表</a></li>
+    <gt name="sceng" value="1"><li><a href="{:U('index?sceng=2&sid='.$sheng[id])}">【{$sheng[sname]}】市列表</a></li></gt>
+    <eq name="sceng" value="3"><li><a href="{:U('index?sceng=3&sid='.$sid)}">【{$shi[sname]}】县/区列表</a></li></eq>
+  </ul>
+</div>
+<div class="rightinfo">
+  <div class="tools">
+    <ul class="toolbar">
+      <li><a href="{:U('edit?sceng='.$sceng.'&sid='.$sid)}"><span><img src="__PUBLIC__/Admin/image/t01.png" /></span>添加</a></li>
+    </ul>
+  </div>
+  <ul class="ulbox clearfix">  
+  <foreach name="diqu" item="v">
+    <li>
+      <p>{$v[sname]}</p>
+      <p>
+          <a href="{:U('edit?sceng='.$sceng.'&sid='.$sid.'&id='.$v[id])}">编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <lt name="sceng" value="3"><a href="{:U('index?sid='.$v[id].'&sceng='.($sceng+1))}">下一级</a>&nbsp;&nbsp;&nbsp;&nbsp;</lt>
+          <a href="{:U('del?id='.$v[id].'&sid='.$sid.'&sceng='.$sceng)}">删除</a></p>
+    </li>
+    </foreach>
+  </ul>
+</div>
+<div class="pages"> {$page}
+  <empty name="diqu"><font color='#ff0000'>暂无数据</font></empty>
+</div>
+</body>
+</html>

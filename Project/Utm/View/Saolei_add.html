@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>欢迎登录后台管理系统</title>
+<link href="__PUBLIC__/Admin/css/base.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Admin/css/right.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/Admin/css/select.css" rel="stylesheet" type="text/css">
+
+<script src="__PUBLIC__/js/jquery-2.1.1.min.js"></script>
+<script src="__PUBLIC__/js/select-ui.min.js"></script>
+
+<script>
+$(document).ready(function(){	
+   $(".select1").uedSelect({
+		width : 345		  
+   });
+   $("#gailvadd").click(function(){
+	   $("#gailvgen").before("<li><label>&nbsp;</label><input name='hmin[]' type='text' style='width:80px;' class='dfinput' > 元 -  <input name='hmax[]' type='text' style='width:80px;' class='dfinput' > 元，概率  <input name='hgailv[]' type='text' style='width:80px;' class='dfinput' >&nbsp;&nbsp;第 <input name='hcishu[]' type='text' style='width:80px;' class='dfinput' > 次抽中<i><img src='__PUBLIC__/Admin/image/t03.png' style='vertical-align:middle; cursor:pointer' onclick='removeFile(this);' /></i></li>");
+   });
+});
+function removeFile(e){	$(e).parent().parent().remove();}
+function check(){
+	var hbzhifu = parseInt($("input[name='hbzhifu']").val());
+	var hgeshu = parseInt($("input[name='hgeshu']").val());
+	if( isNaN(hbzhifu) || isNaN(hgeshu)){
+		alert('请填入正确的数字');
+		return false;
+	}
+	if(hgeshu >= hbzhifu){
+		alert('包数不能超过红包价格');
+		return false;
+	}
+	return true;
+}
+</script>
+</head>
+<body>
+<div class="place"> <span>位置：</span>
+  <ul class="placeul">
+    <li><a href="{:U('Index/center')}">首页</a></li>
+    <li>扫雷</li>
+  </ul>
+</div>
+<div class="formbody">
+  <div class="formtitle"><span>基本信息</span></div>
+  <form name="fadd" method="post" action="{:U('save?id='.$seldata[id])}" onSubmit="return check()">
+   <ul class="forminfo">   
+    <li>
+      <label>红包价格</label>
+      <input name="hbzhifu" type="text" value="{$seldata['hbzhifu']/100}" class="dfinput" >
+      <i>元</i></li>
+    <li>
+      <label>包数</label>
+      <input name="hgeshu" type="text" value="{$seldata['hgeshu']}" class="dfinput" >
+      <i>允许发出的红包个数</i></li>
+    <li>
+      <label>多尾数</label>
+      <input name="hweiduo" type="text" value="{$seldata['hweiduo'] == 10 ? '' : $seldata['hweiduo']}" class="dfinput" >
+      <i></i></li>
+    <li>
+      <label>少尾数</label>
+      <input name="hweishao" type="text" value="{$seldata['hweishao'] == 10 ? '' : $seldata['hweishao']}" class="dfinput" >
+      <i></i></li>
+    <li>
+      <label>排序</label>
+      <input name="hpaixu" type="text" value="{$seldata['hpaixu']}" class="dfinput" >
+      <i>越大越靠前</i></li>
+    <li>
+      <label>&nbsp;</label>
+      <input type="submit" name="button" class="btn" value="确认保存" />
+    </li>
+  </ul>
+  </form>
+</div>
+</body>
+</html>

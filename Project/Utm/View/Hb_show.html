@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>欢迎登录后台管理系统</title>
+<link href="__PUBLIC__/Admin/css/base.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Admin/css/right.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/css/page.css" rel="stylesheet" type="text/css">
+<script src="__PUBLIC__/js/jquery-2.1.1.min.js"></script>
+<script>
+$(document).ready(function(){
+   $(function(){
+      $('.rightinfo tbody tr:odd').css("backgroundColor","#f5f8fa");
+   });
+   $(".imgact1").click(function(){
+	   var id=$(this).parent().find("input[name='id']").val();
+	   var img=($(this).attr("src")=='__PUBLIC__/Admin/image/no.gif') ? "__PUBLIC__/Admin/image/yes.gif":"__PUBLIC__/Admin/image/no.gif";
+	   $(this).attr("src",img);
+	   $.post("{:U('ajaxhbcode')}",{id:id},function(data){});
+   });
+});
+function del(){ if(confirm("确定要删除吗？")) {   return true;  }  else  {  return false;  } }
+</script>
+</head>
+
+<body>
+<div class="place"> <span>位置：</span>
+  <ul class="placeul">
+    <li><a href="{:U('Index/center')}">首页</a></li>
+    <li><a href="{:U('show')}">管理红包</a></li>
+  </ul>
+</div>
+<div class="rightinfo">
+  <div class="tools"> 
+    <ul class="toolbar">
+      <li><a href="{:U('add')}"><span><img src="__PUBLIC__/Admin/image/t01.png" /></span>添加</a></li> 
+    </ul>
+  </div>
+    <table class="tablelist">
+    <thead>
+      <tr>
+        <th>名字</th>
+        <th>个数</th>
+        <th>最小金额</th>
+        <th>最大金额</th>
+        <th>显示</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <foreach name="seldata" item="v">
+      <tr height="45" align="center">
+        <td><font color="#FF0000">{$v[hzhifue]/100}</font>元竞猜红包</td>
+        <td>{$v[hgeshu]}个</td>
+        <td>{$v['hminmoney']/100}</td>        
+        <td>{$v['hmaxmoney']/100}</td>
+        <td>
+            <input type="hidden" name="id" value="{$v[id]}" />
+            <eq name="v[hcode]" value="1"> 
+            <img src="__PUBLIC__/Admin/image/yes.gif" style="cursor:pointer;vertical-align:middle" class="imgact1" />
+            <else/>
+            <img src="__PUBLIC__/Admin/image/no.gif" style="cursor:pointer;vertical-align:middle" class="imgact1" /> </eq></td>
+        <td>
+          <img src="__PUBLIC__/Admin/image/leftico03.png" width="14">
+          <a href="{:U('add?id='.$v['id'])}">编辑</a>&nbsp;
+          <img src="__PUBLIC__/Admin/image/t03.png" width="14">
+          <a onClick="return del()" href="{:U('del?id='.$v['id'])}" class="tablelink">删除</a>
+        </td>
+      </tr>
+    </foreach>
+      
+    </tbody>
+  </table>
+</div>
+<div class="pages">
+   {$page}<empty name="seldata"><font color='#ff0000'>暂无数据</font></empty>
+</div>
+</body>
+</html>

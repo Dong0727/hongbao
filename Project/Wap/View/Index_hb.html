@@ -1,0 +1,108 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>拼手气</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<script type="text/javascript" src="__PUBLIC__/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/scroll.js"></script>
+<link href="__PUBLIC__/css/base.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/Weixin/css/index.css?v={:rand(0,99)}" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/Weixin/css/head.css?v={:rand(0,99)}" rel="stylesheet" type="text/css">
+<style></style>
+<script>
+$(document).ready(function () { 
+    $(function(){
+	    
+	});
+    $('.hb2 li').click(function(){
+		var chaiact = $("input[name='chaiact']").val();
+		if(chaiact ==2){return false;}
+		$("input[name='chaiact']").val(2);
+		var h =$(this).find('p').text();
+		var p = $(this);
+		$.post("{:U('ajaxchai')}",{hbid:{$hbid|intval}},function(res){
+		   if(res.code==1){
+			   $("input[name='chaiact']").val(1);
+			   $('.msgbox .txt').text('请先支付！');
+		       $('.msgbox').show();
+			   $("input[name='msgbox']").val(1);
+		   }
+		   if(res.code == 2) {
+		      p.css('height',p.height());
+		      p.empty();
+			  $('.msgbox .txt').text('恭喜您获得 '+res.hbe+' 元!');
+		      $('.msgbox').show();
+			  $("input[name='msgbox']").val(1);
+			  if(h!=res.hbe){
+				   $('.hb2 li').each(function(index, element) {
+                        var s=$(this).find('p').text();
+						if(s==res.hbe){
+							$(this).find('p').text(h);
+						}
+                   });
+			  }
+		      $('.hb2 .chai').hide();
+		      $('.hb2 .xian').show();
+		   }
+		   if(res.code == 3){
+			  $("input[name='chaiact']").val(1); 
+			  $('.msgbox .txt').text('系统频繁，请稍候再试');
+		      $('.msgbox').show();
+		   }
+		   if(res.code == 4){
+			  $("input[name='chaiact']").val(1);
+			  $('.msgbox .txt').text('今天次数已经没有了，请明天再来！');
+		      $('.msgbox').show();
+		   }
+		   if(res.code == 5){
+			  $("input[name='chaiact']").val(1); 
+			  $('.msgbox .txt').text('操作太快，歇歇再抢！');
+		      $('.msgbox').show();
+		   }
+		},'json');
+	});
+	/*
+	$('.hb4').myScroll({
+		speed: 100, //数值越大，速度越慢
+		rowHeight: 30 //li的高度
+	});
+	*/
+});
+</script>
+</head>
+<body>
+<input type="hidden" value="1" name="chaiact">
+<!--1可拆2锁定--> 
+<include file="head" /> 
+
+<!--
+<eq name="sysconfig[cgundong]" value="2">
+<div class="hb4">
+ <ul>
+     {$html}
+ </ul>
+</div>
+</eq>
+-->
+
+<div class="hb1 clearfix">
+  <p>可抢到红包</p>
+  <ul>
+    <foreach name="hbcon" item="v">
+      <li>{$v/100}</li>
+    </foreach>
+  </ul>
+</div>
+<div class="hb2">
+  <ul>
+    <foreach name="chaihbcon" item="v">
+      <li><img src="__PUBLIC__/Weixin/img/4.gif" class="chai"> <img src="__PUBLIC__/Weixin/img/5.png" class="xian">
+        <P class="xian">{$v/100}</P>
+      </li>
+    </foreach>
+  </ul>
+</div>
+<include file="Index/menu" />
+</body>
+</html>

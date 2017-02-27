@@ -1,0 +1,99 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>精彩转盘</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<script src="__PUBLIC__/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/jQueryRotate.2.2.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.easing.min.js"></script>
+<link href="__PUBLIC__/css/base.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/Weixin/css/index.css?v={:rand(0,99)}" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/Weixin/css/head.css?v={:rand(0,99)}" rel="stylesheet" type="text/css">
+<style>
+.rotate .rotate-bg { width: 300px; margin: 0 auto; position: relative }
+#lotteryBtn { width: 130px; position: absolute; top: 84px; left: 85px; }
+.zhuanpanbut { border-radius: 5px; color: #FFF; width: 200px; line-height: 40px; margin: 0 auto; text-align: center; background: #d84e43; margin-top: 10px }
+</style>
+<script>
+    var rotateFunc = function(angle) { //awards:奖值ID，angle:奖项对应的角度
+    $('#lotteryBtn').stopRotate();
+    $("#lotteryBtn").rotate({
+      angle: 0,
+      duration: 5000,
+      animateTo: angle + 1440,
+      //angle是图片上各奖项对应的角度，1440是我要让指针旋转4圈。所以最后的结束的角度就是这样子^^
+      callback: function() {
+        $.post("{:U('ajaxchai')}", {},function(res) {
+          if (res.code == 2) {
+			$("input[name='chaiact']").val(1); 
+            $('.msgbox .txt').text('恭喜您获得 ' + res.hbe + ' 元!');
+            $('.msgbox').show();
+			$("input[name='msgbox']").val(2);
+          }
+          if (res.code == 3) {
+            $("input[name='chaiact']").val(1);
+            $('.msgbox .txt').text('系统频繁，请稍候再试');
+            $('.msgbox').show();
+          }
+          if (res.code == 4) {
+            $("input[name='chaiact']").val(1);
+            $('.msgbox .txt').text('今天次数已经没有了，请明天再来！');
+            $('.msgbox').show();
+          }
+        },'json');
+      }
+    });
+  };
+
+  $(document).ready(function() {
+    $("#lotteryBtn").rotate({
+      bind: {
+        click: function() {
+          var chaiact = $("input[name='chaiact']").val();
+          if (chaiact == 2) {
+              return false;
+          }
+          $("input[name='chaiact']").val(2);
+          $.post("{:U('ajaxzhuan')}", {},function(res) {
+              if (res.code == 1) {
+                  $("input[name='chaiact']").val(1);
+                  $('.msgbox .txt').text('请先支付！');
+                  $('.msgbox').show();
+                  $("input[name='msgbox']").val(2);
+                  return false;
+               }
+               if (res.code == 5) {
+                  $("input[name='chaiact']").val(1);
+                  $('.msgbox .txt').text('操作太快，请歇歇再玩！');
+                  $('.msgbox').show();
+                  return false;
+               }
+			   <foreach name = "zhuanpan" item = "v" >
+                  if (res.gailvid == {$v[id]}) {
+                     rotateFunc({$v[hjiaodu]|intval});
+                  }
+			   </foreach>
+			},'json');
+		 }
+	  }
+	});
+	
+   $('.zhuanpanbut').click(function(){
+	   location.href='{:U("Chongzhi/chong?ctype=2&hbid=".$hbid)}';
+   });
+	
+});
+</script>
+</head>
+<body>
+<include file="Index/head" />
+<input type="hidden" value="1" name="chaiact">
+<!--1可拆2锁定-->
+<div class="rotate w100">
+  <div class="rotate-bg"> <img src="__PUBLIC__/Weixin/img/3.png" width="300" /> <img src="__PUBLIC__/Weixin/img/7.png" id="lotteryBtn"> </div>
+</div>
+<div class="zhuanpanbut">获得转盘机会({$zhuanpan[0][hzhifue]/100}元)</div>
+<include file="Index/menu" />
+</body>
+</html>

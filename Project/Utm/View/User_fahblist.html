@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="__PUBLIC__/Admin/css/base.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Admin/css/right.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/css/page.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="__PUBLIC__/js/jquery-2.1.1.min.js"></script>
+<script>
+$(document).ready(function(){
+   $(function(){
+      $('.rightinfo tbody tr:odd').addClass('odd')
+   });
+});
+function del(){ if(confirm("确定要删除吗？")) {   return true;  }  else  {  return false;  } }
+</script>
+</head>
+
+<body>
+<div class="place"> <span>位置：</span>
+  <ul class="placeul">
+    <li><a href="{:U('Index/center')}">首页</a></li>
+    <li><a href="{:U('index')}">用户管理</a></li>
+    <li><a href="{:U('fahb?userid='.$userid)}">发包记录</a></li>
+    <li>详情</li>
+  </ul>
+</div>
+<div class="rightinfo">
+  <table class="tablelist">
+    <thead>
+      <tr>
+        <th>红包ID</th>
+        <th>金额</th>
+        <th>状态</th>
+        <th>拆包人ID</th>
+        <th>拆包人昵称</th>
+        <th>获得赔付</th>
+        <th>拆包时间</th>
+      </tr>
+    </thead>
+    <tbody>
+      <foreach name="fahblist" item="v">
+        <tr height="40" align="center">
+          <td>{$v['id']}</td>
+          <td>{$v['hmoney']/100}</td>
+          <td>{$v['hcode'] == 1 ? "<font color='#FF0000'>未拆</font>":'已拆'}</td>
+          <td>{$v['userid'] == -1 ? 'BOSS':$v[userid]}</td>
+          <td>{$v['userid'] == -1 ? 'BOSS':$v[uickname]}</td>
+          <td>{$v['hpeie']/100}</td>
+          <td>{$v['ttime'] == '' ? '' :$v[ttime]|date="Y-m-d H:i:s",###}</td>
+        </tr>
+      </foreach>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

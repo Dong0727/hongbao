@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>欢迎登录后台管理系统</title>
+<link href="__PUBLIC__/Admin/css/base.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Admin/css/right.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/Admin/css/select.css" rel="stylesheet" type="text/css">
+
+<script src="__PUBLIC__/js/jquery-2.1.1.min.js"></script>
+<script src="__PUBLIC__/js/select-ui.min.js"></script>
+
+<script>
+$(document).ready(function(){	
+   $(".select1").uedSelect({
+		width : 345		  
+   });
+});
+function removeFile(e){	$(e).parent().parent().remove();}
+</script>
+</head>
+<body>
+<div class="place"> <span>位置：</span>
+  <ul class="placeul">
+    <li><a href="{:U('Index/center')}">首页</a></li>
+    <li><a href="{:U('fenxiao')}">三级佣金</a></li>
+  </ul>
+</div>
+<div class="formbody">
+  <div class="formtitle"><span>基本信息</span></div>
+  <form id="fadd" name="fadd" method="post" action="{:U('fenxiaosave?id='.$seldata[id])}">
+   <ul class="forminfo">   
+    <li>
+      <label>一级佣金</label>
+      <input name="fjine1" type="text" value="{$seldata['fjine1']}" class="dfinput" >
+      <i>分，单局，指用户玩一局，第一推荐人获得</i></li>
+    <li>
+      <label>二级佣金</label>
+      <input name="fjine2" type="text" value="{$seldata['fjine2']}" class="dfinput" >
+      <i>分，单局，第二推荐人获得</i></li>
+    <li>
+      <label>三级佣金</label>
+      <input name="fjine3" type="text" value="{$seldata['fjine3']}" class="dfinput" >
+      <i>分，单局，第三推荐人获得</i></li>
+    <li>
+      <label>&nbsp;</label>
+      <input type="submit" name="button" class="btn" value="确认保存" />
+    </li>
+  </ul>
+  </form>
+</div>
+<div class="install"></div>
+</body>
+</html>

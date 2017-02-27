@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="__PUBLIC__/Admin/css/base.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Admin/css/right.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/css/page.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="__PUBLIC__/js/jquery-2.1.1.min.js"></script>
+<script src="__PUBLIC__/js/datejs/laydate.js"></script>
+
+<script>
+$(document).ready(function(){
+   $(function(){
+      $('.rightinfo tbody tr:odd').addClass('odd')
+   });
+});
+function del(){ if(confirm("确定要删除吗？")) {   return true;  }  else  {  return false;  } }
+</script>
+</head>
+
+<body>
+<div class="place"> <span>位置：</span>
+  <ul class="placeul">
+    <li><a href="{:U('Index/center')}">首页</a></li>
+    <li>佣金查询</li>
+  </ul>
+</div>
+<div class="rightinfo">
+  <div class="tools">
+    <ul class="toolbar">
+      <li style="background:#FFF; text-indent:1em; border:0">
+        <form name="fsoso1" method="post" action="{:U('yongjin')}">
+          用户ID <input name="sci" type="text" class="dfinput" style="width:100px" >
+          开始时间 <input name="sktime" type="text" class="dfinput" style="width:140px" onClick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+          结束时间 <input name="sjtime" type="text" class="dfinput" style="width:140px" onClick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+          <input name="submit" class="btn" value="查询" type="submit">
+        </form>
+      </li>
+    </ul>
+  </div>
+  <table class="tablelist">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>昵称</th>
+        <th>头像</th>
+        <th>推广充值(元)</th>
+        <th>佣金(元)</th>
+        <th>结算状态</th>
+        <th>时间</th>
+      </tr>
+    </thead>
+    <tbody>
+      <foreach name="yongjin" item="v">
+        <tr height="40" align="center">
+          <td>{$v['userid']}</td>
+          <td>{$v['uickname']}</td>
+          <td><notempty name="v[uheadimgurl]"><img src="{$v['uheadimgurl']}" height="54" width="54"/></notempty></td>
+          <td>{$v['uchong'] == 0 ? '奖励' : $v['uchong']/100}</td>
+          <td>{$v['tixiane']/100}</td>
+          <td><switch name="v[tcode]" >
+              <case value="1">未发放</case>
+              <case value="2">已发放</case>
+              <case value="4">扣量</case>
+              </switch></td>
+          <td>{$v[ttime]|date="Y-m-d H:i:s",###}</td>
+        </tr>
+      </foreach>
+    </tbody>
+  </table>
+</div>
+<div class="pages"> {$page}
+  <empty name="yongjin"><font color='#ff0000'>暂无数据</font></empty>
+</div>
+<script>
+!function(){
+	laydate.skin('molv');//切换皮肤，请查看skins下面皮肤库
+}();
+</script>
+
+</body>
+</html>

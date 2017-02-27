@@ -1,0 +1,78 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>刮刮乐</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<script src="__PUBLIC__/js/jquery-2.1.1.min.js"></script>
+<script src="__PUBLIC__/js/wScratchPad.js"></script>
+<link href="__PUBLIC__/css/base.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/Weixin/css/index.css?v={:rand(0,99)}" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/Weixin/css/head.css?v={:rand(0,99)}" rel="stylesheet" type="text/css">
+<style>
+.cover { width: 320px; max-width: 480px; margin: 0 auto; position: relative; }
+.cover img { width: 320px; }
+#scratchpad, #prize { position: absolute; width: 150px; height: 40px; top: 140px; left: 105px; text-align: center; font-size: 20px; line-height: 40px; color: #333; }
+.zhuanpanbut { border-radius: 5px; color: #FFF; width: 200px; line-height: 40px; margin: 0 auto; text-align: center; background: #d84e43; margin-top: 10px }
+</style>
+<script>
+$(document).ready(function () {
+    $(function() {
+		var guagua = true;//异步拆
+		var showbox = true;
+		$("#scratchpad").wScratchPad({
+				width: 150,
+				height: 40,
+				color: "#a9a9a7",
+				scratchMove: function(e,percent) {
+					if(guagua){
+					   guagua = false;
+					   $.post("{:U('ajaxgua')}",{},function(res){
+						   $("input[name='msgbox']").val(3);
+						   if(res.code == 1){
+			                    $('.msgbox .txt').text('请先支付！');
+		                        $('.msgbox').show();
+						   }
+						   if(res.code == 2){
+							    $('#prize').text('￥'+res.hbe)
+								$.post("{:U('ajaxchai')}", {},function(ret) {
+                                       if (ret.code == 2) {
+                                             $('.msgbox .txt').text('恭喜您获得 ' + ret.hbe + ' 元!');
+                                             $('.msgbox').show();
+                                       }
+                                       if (ret.code == 3) {
+                                             $('.msgbox .txt').text('系统频繁，请稍候再试');
+                                             $('.msgbox').show();
+                                       }
+                                       if (ret.code == 4) {
+                                             $('.msgbox .txt').text('今天次数已经没有了，请明天再来！');
+                                             $('.msgbox').show();
+                                       }
+								},'json');
+						   }
+						   if(res.code == 5){
+			                    $('.msgbox .txt').text('操作太快，歇歇再玩！');
+		                        $('.msgbox').show();			                    
+						   }						   
+					   },'json');
+					}
+				}
+		});
+	});
+   $('.zhuanpanbut').click(function(){
+	   location.href='{:U("Chongzhi/chong?ctype=4&hbid=".$hbid)}';
+   });
+});
+</script>
+</head>
+<body>
+<include file="Index/head" />
+<input type="hidden" name="paycode">
+<div class="cover"> <img src="__PUBLIC__/Weixin/img/9.png">
+  <div id="prize"></div>
+  <div id="scratchpad"> </div>
+</div>
+<div class="zhuanpanbut">获得刮奖机会({$hb[hzhifue]/100}元)</div>
+<include file="Index/menu" />
+</body>
+</html>

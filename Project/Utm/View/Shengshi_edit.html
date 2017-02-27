@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>欢迎登录后台管理系统</title>
+<link href="__PUBLIC__/Admin/css/base.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Admin/css/right.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="__PUBLIC__/js/jquery-2.1.1.min.js"></script>
+<script>
+$(document).ready(function(){	
+   $(function(){
+      $('.rightinfo tbody tr:odd').css("backgroundColor","#f5f8fa");	
+   })
+   $(".btn").click(function(){
+	  var id = $("input[name='id']").val();
+	  var sid = $("input[name='sid']").val();
+	  var sceng = $("input[name='sceng']").val();
+	  var sname = $("input[name='sname']").val();
+	  if(sname == '' ){
+		 alert("填写错误");
+		 return false;
+      }
+	  $.post("{:U('save')}",{sname:sname,id:id,sid:sid},function(data){
+			 location.href="{:U('index')}" + "&sceng=" + sceng + "&sid="+sid;
+	   });
+   });
+});
+</script>
+</head>
+<body>
+<div class="place"> <span>位置：</span>
+  <ul class="placeul">
+    <li><a href="{:U('Index/center')}">首页</a></li>
+    <li><a href="{:U('index')}">全国省列表</a></li>
+    <gt name="sceng" value="1"><li><a href="{:U('index?sceng=2&sid='.$sheng[id])}">【{$sheng[sname]}】市列表</a></li></gt>
+    <eq name="sceng" value="3"><li><a href="{:U('index?sceng=3&sid='.$sid)}">【{$shi[sname]}】县/区列表</a></li></eq>
+    <li>编辑</li>
+  </ul>
+</div>
+<div class="formbody">
+  <div class="formtitle"><span>基本信息</span></div>
+  <ul class="forminfo">
+      <input name="id" type="hidden"  value="{$diqu[id]}" />
+      <input name="sid" type="hidden"  value="{$sid}" />
+      <input name="sceng" type="hidden" value="{$sceng}">
+    <li>
+      <label>地区名</label>
+      <input name="sname" type="text" class="dfinput" value="{$diqu[sname]}" />
+      <i></i></li>
+    <li>
+      <label>&nbsp;</label>
+      <input name="button" type="button" class="btn" value="确认保存"/>
+    </li>
+  </ul>
+</div>
+</body>
+</html>

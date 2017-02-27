@@ -1,0 +1,48 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>支付</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link href="__PUBLIC__/css/base.css?v={:rand(0,100)}" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/Weixin/css/index.css?v={:rand(0,100)}" rel="stylesheet" type="text/css">
+<script src="__PUBLIC__/js/jquery-2.1.1.min.js"></script>
+<script>
+$(document).ready(function () { 
+    $(function(){
+		if (typeof WeixinJSBridge == "undefined"){
+		    if( document.addEventListener ){
+		        document.addEventListener('WeixinJSBridgeReady', jsApiCall, false);
+		    }else if (document.attachEvent){
+		        document.attachEvent('WeixinJSBridgeReady', jsApiCall); 
+		        document.attachEvent('onWeixinJSBridgeReady', jsApiCall);
+		    }
+		} else {
+		    jsApiCall();
+		}
+	});
+});
+
+function jsApiCall()	{
+		WeixinJSBridge.invoke(
+			'getBrandWCPayRequest',
+			{$jsApiParameters},
+			function(res){
+				$("input[name='msgbox']").val(4);
+				if(res.err_msg == "get_brand_wcpay_request:ok"){
+			        $('.msgbox').show();
+			        $('.msgbox .txt').text('充值成功');
+				} else {
+			        $('.msgbox').show();
+			        $('.msgbox .txt').text('取消充值');
+				}
+			}
+		);
+}
+</script>
+</head>
+<body>
+<div style="line-height:60px; text-align:center;">请等待支付......</div>
+<include file="Index/menu" />
+</body>
+</html>

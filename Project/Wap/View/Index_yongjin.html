@@ -1,0 +1,55 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>我的佣金</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<script type="text/javascript" src="__PUBLIC__/js/jquery-2.1.1.min.js"></script>
+<link href="__PUBLIC__/css/base.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/Weixin/css/index.css?v={:rand(0,99)}" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/Weixin/css/head.css?v={:rand(0,99)}" rel="stylesheet" type="text/css">
+<style></style>
+<script>
+$(document).ready(function () { 
+	$(function(){
+		  $.get("{:U('ajaxyongjin')}",{},function(res){
+			 $(".yongjin2").append(res.html);
+		  },'json');
+	});
+	
+	$(window).scroll(function(){
+	   var scrollTop = $(this).scrollTop();
+	   var scrollHeight = $(document).height();
+	   var windowHeight = $(this).height();
+	   if(scrollTop + windowHeight >= scrollHeight){
+		  var page = parseInt($("input[name='page']").val());
+		  $.get("{:U('ajaxyongjin')}",{page:page},function(res){
+			 $(".yongjin2").append(res.html);
+			 $("input[name='page']").val(page+1);
+		  },'json');
+	   }
+   });
+   
+   $(".yongjin2").delegate(".xiang", "click", function(){
+	   var uls = $(this).parent().parent().find('ul');
+	   $('.yongjin2 ul').hide();
+	   if(uls.is(':visible')){
+		   uls.hide();
+	   } else {
+		   uls.show();
+	   }	     
+   }); 
+   
+});
+</script>
+</head>
+<body>
+<input type="hidden" name="page" value="1">
+<include file="head" />
+<div class="headtitle">我的佣金</div>
+<div class="yongjin3">今日剩余结算次数（含拆红包和佣金结算）：{$cishu}次</div>
+<div class="yongjin2"></div>
+
+<include file="Index/menu" />
+</body>
+</html>

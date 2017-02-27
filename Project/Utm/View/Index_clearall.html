@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>欢迎登录后台管理系统</title>
+<link href="__PUBLIC__/Admin/css/base.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Admin/css/right.css" rel="stylesheet" type="text/css">
+<script src="__PUBLIC__/js/jquery-2.1.1.min.js"></script>
+<script>
+$(document).ready(function(){	
+   $(function(){
+      $('.rightinfo tbody tr:odd').css("backgroundColor","#f5f8fa");	
+   })
+   $(".btn").click(function(){
+	  var upass1 = $("input[name='upass1']").val();
+	  if(upass1 == ''){
+		 alert("原密码填写错误");
+		 return false;
+      }
+	  $.post("{:U('Index/ajaxclear')}",{upass1:upass1},function(res){
+		  if(res.code == 1){
+		     alert("密码输入错误");
+			 return false;
+		  }
+		  if(res.code == 2){
+		     alert("清空成功");
+			 return false;
+		  }
+	  },'json');
+   });
+});
+</script>
+</head>
+<body>
+<div class="place"> <span>位置：</span>
+  <ul class="placeul">
+    <li><a href="{:U('Index/center')}">首页</a></li>
+    <li>清空数据</li>
+  </ul>
+</div>
+<div class="formbody">
+  <div class="formtitle"><span>基本信息</span></div>
+  <ul class="forminfo">
+    <li>
+      <label>登录密码</label>
+      <input name="upass1" type="password" class="dfinput" />
+      <i></i></li>
+    <li>
+      <label>&nbsp;</label>
+      <input name="button" type="button" class="btn" value="确认清空"/>
+    </li>
+  </ul>
+</div>
+</body>
+</html>

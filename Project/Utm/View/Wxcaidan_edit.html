@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>欢迎登录后台管理系统</title>
+<link href="__PUBLIC__/Admin/css/base.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Admin/css/right.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/Admin/css/select.css" rel="stylesheet" type="text/css">
+
+<script src="__PUBLIC__/js/jquery-2.1.1.min.js"></script>
+<script src="__PUBLIC__/js/select-ui.min.js"></script>
+
+<script>
+$(document).ready(function(){	
+   $(".select1").uedSelect({
+		width : 345			  
+   });
+   
+   $("input[name='ctype']").click(function(){
+	   var ctype=parseInt($("input[name='ctype']:checked").val());
+	   if(ctype==0){$("#guanjianci").hide();$("#weburl").show();}
+	   if(ctype==1){$("#guanjianci").show();$("#weburl").hide();}
+	   if(ctype==2 || ctype==3){$("#guanjianci").hide();$("#weburl").hide();}
+   });   
+});
+</script>
+</head>
+<body>
+<div class="place"> <span>位置：</span>
+  <ul class="placeul">
+    <li><a href="{:U('Index/center')}">首页</a></li>
+    <li><a href="{:U('show')}">微信一级菜单</a></li>
+    
+    <gt name="cid" value="0">
+    <li><a href="{:U('show?cid='.$cid)}">微信二级菜单</a></li>
+    </gt>
+    
+    <li>编辑</li>
+  </ul>
+</div>
+<div class="formbody">
+  <div class="formtitle"><span>基本信息</span></div>
+  <form name="fadd" method="post" action="{:U('save?cid='.$cid.'&nid='.$seldata['id'])}">
+  <ul class="forminfo">
+    <li>
+      <label>菜单名字</label>
+      <input name="cname" type="text" value="{$seldata['cname']}" class="dfinput" />
+      <i></i></li>
+    <li>
+      <label>菜单顺序</label>
+      <input name="cnum" type="text" value="{$seldata['cnum']}" class="dfinput" />
+      <i>数字越大越靠前</i></li>
+    
+    <li>
+      <label>菜单类型</label>
+      <input name="ctype" type="radio" value="0" <if condition="($seldata['ctype'] eq 0) OR ($seldata['ctype'] eq '') ">checked</if> > 网址跳转&nbsp;
+      <input name="ctype" type="radio" value="1" <eq name="seldata['ctype']" value="1">checked</eq> > 关键词推送
+      <input name="ctype" type="radio" value="2" <eq name="seldata['ctype']" value="2">checked</eq> > 扫一扫
+      <input name="ctype" type="radio" value="3" <eq name="seldata['ctype']" value="3">checked</eq> > 拍照
+      <i></i></li>
+    
+    <li id="weburl" <if condition="($seldata['ctype'] neq 0) and ($seldata['ctype'] neq '') ">style="display:none"</if> >
+      <label>跳转网址</label>
+      <input name="curl" type="text" value="{$seldata['curl']}" class="dfinput" />
+      <i>如果菜单类型选择了网址跳转，此项必填，网址以http开头</i></li>
+    
+    <li id="guanjianci"  <neq name="seldata['ctype']" value="1"> style="display:none" </neq > >
+      <label>关键词</label>
+      <div class="vocation">
+      <select name="ckey" class="select1">
+      
+          <foreach name="optiondata" item="vo">
+          <option value="{$vo.sname}" <eq name="vo['sname']" value="$seldata['ckey']">selected</eq> >
+		  {$vo.sname}</option>
+          </foreach>
+
+        </select>
+        </div>
+      <i><a href="{:U('Wxhuifu/keylist?stype=1')}"><font color="#FF0000">关键词管理</font></a> 如果菜单类型选择了关键词推送，此项必选</i></li>
+    <li>
+      <label>&nbsp;</label>
+      <input name="button" type="submit" class="btn" value="确认保存"/>
+    </li>
+  </ul>
+  </form>
+</div>
+</body>
+</html>
